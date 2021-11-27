@@ -1,11 +1,11 @@
-# Flip
+# 反転
 
 ![Flip preview](flip/flip.gif)
 
-## Flip Horizontal
+## 左右反転
 
-To flip the sprite horizontally, you can select *Edit > Flip Horizontal* menu (<kbd>Shift+H</kbd>).
+スプライトを左右反転するには、メニューの*編集 > 左右反転*（<kbd>Shift+H</kbd>）を使用します。
 
-## Flip Vertical
+## 上下反転
 
-To flip the sprite vertically, you can select *Edit > Flip Vertical* menu (<kbd>Shift+V</kbd>).
+スプライトを上下反転するには、メニューの*編集 > 上下反転*（<kbd>Shift+V</kbd>）を使用します。

@@ -1,34 +1,30 @@
-# Workflow
+# ワークフロー
 
-1. [Create a new sprite](new-sprite.md) with *File > New* menu (<kbd>Ctrl+N</kbd> or <kbd>⌘N</kbd>),
-   [Open an existent one](open.md) with *File > Open* menu, or drag-and-drop a file from
-   Windows Explorer to Aseprite window.
+1. [新規スプライトを作成する](new-sprite.md)：メニューの *ファイル > 新規* （<kbd>Ctrl+N</kbd> または <kbd>⌘N</kbd>）で新規スプライトを作成します。
+   もしくは、メニューの *ファイル > 開く* を使ったり、エクスプローラー・Finder から Aseprite にファイルをドラッグしたりして[既存のファイルを開きます。](open.md)
 
-1. [Draw](drawing.md) using <kbd>Left click</kbd> or <kbd>Right click</kbd> with the Pencil tool ![Pencil Tool Icon](tools/pencil-tool.png).
-   Pick colors with <kbd>Alt+Left click</kbd> and <kbd>Alt+Right click</kbd>. Change
-   [zoom](zoom.md) with <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>, <kbd>4</kbd>, <kbd>5</kbd>, <kbd>6</kbd> keys,
-   the mouse wheel, or Zoom tool ![Zoom Tool Icon](tools/zoom-tool.png) (<kbd>Z</kbd> key).
+1. [描く](drawing.md)：ペンツール![Pencil Tool Icon](tools/pencil-tool.png) で <kbd>左クリック</kbd> または <kbd>右クリック</kbd> すると描くことができます。
+   <kbd>Alt+左クリック</kbd> と <kbd>Alt+右クリック</kbd>で色を取得できます。
+   テンキーではない <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> <kbd>5</kbd> <kbd>6</kbd> キーや、
+   マウスホイールや、ズームツール![Zoom Tool Icon](tools/zoom-tool.png)（<kbd>Z</kbd> キー）で[ズーム](zoom.md)できます。
 
-1. [Select](selecting.md) with Marquee tool ![Marquee Tool Icon](tools/marquee-tool.png) (<kbd>M</kbd> key),
-   and drag-and-drop the selection, or [transform it](transformations.md).
+1. [選択する](selecting.md)：矩形選択ツール![Marquee Tool Icon](tools/marquee-tool.png) （<kbd>M</kbd> キー）で選択ができます。
+   その後、選択範囲をドラッグしたり、[変形](transformations.md)したりできます。
 
-1. Create new [layers](layers.md) with *Layer > New Layer* menu (<kbd>Shift+N</kbd> key).
+1. [新規レイヤーを作成する](layers.md)：メニューの *レイヤー > 新規レイヤー* （<kbd>Shift+N</kbd> キー）で新規レイヤーを作成できます。
 
-1. Create new [frames](animation.md) with *Frame > New Frame* menu (<kbd>Alt+N</kbd> key).
+1. [新規フレームを作成する](animation.md)：メニューの *フレーム > 新規フレーム* （<kbd>Alt+N</kbd> キー）で新規フレームを追加できます。
 
-1. Use the [timeline](timeline.md) (<kbd>Tab</kbd> key) to [copy layers](copy-layers.md), [frames](copy-frames.md), or [cels](copy-cels.md).
+1. [タイムライン](timeline.md)（<kbd>タブ</kbd> キー）を使用して[レイヤーをコピー](copy-layers.md)したり、[フレームをコピー](copy-frames.md)したり、[セルをコピー](copy-cels.md)したりできます。
 
-1. Save your work with *File > Save* menu as a `.ase` file to preserve
-   all your image information (layers, frames, etc.).
+1. メニューの *ファイル > 上書き保存* でファイルを保存できます。`.ase`ファイルで保存することで、全ての画像情報（レイヤー、フレームなど）を保持できます。
 
-1. Use *File > Save Copy As* to export your sprite as a `.gif` file to
-   publish your image on a website, or `.png` to save a sequence of
-   files, or as a `.png` [sprite sheet](sprite-sheet.md), etc.
+1. メニューの *ファイル > エクスポート* で `.gif` ファイルとしてウェブページ向けにエクスポートしたり、フレームごとの `.png` ファイルとしてエクスポートしたり、[スプライトシート](sprite-sheet.md)としてエクスポートしたりできます。
 
-1. Automate the export operation using the [command line interface](cli.md)
+1. [コマンドラインインターフェース](cli.md)を使うことでエクスポートを自動化できます。
 
 ---
 
 **SEE ALSO**
 
-[Basics](basics.md)
+[基本](basics.md)

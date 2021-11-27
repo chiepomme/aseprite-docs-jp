@@ -1,30 +1,27 @@
-# Cel
+# セル(Cel)
 
-A cel (from [celluloid](http://en.wikipedia.org/wiki/Cel)) is one
-image in a specific frame and layer, at a specific *xy*-coordinate in
-the canvas.
+セル（[セルロイド](http://en.wikipedia.org/wiki/Cel)に由来します）は、特定のフレームとレイヤーにある画像で、キャンバスの中の特定の*xy座標*に存在します。
+is one image in a specific frame and layer, at a specific *xy*-coordinate in the canvas.
 
 ![Cel on Timeline](cel/cel-on-timeline.png)
 
-The difference between a frame and a cel, is that a frame is the set of
-cels for all layers in a specific time:
+フレームとセルの違いは、フレームは特定の時間において全レイヤーのセルを合わせたものだということです：
 
 ![Frame on Timeline](cel/frame-on-timeline.png)
 
-## Move a Cel
+## セルを移動する
 
-You can use the [Move tool](move-tool.md) to drag-and-drop the current
-cel in the canvas. Or you can use the [Timeline to move the cel](move-cels.md) to
-other layer/frame position.
+[移動ツール](move-tool.md)で現在のセルをキャンバス内でドラッグできます。
+また、ほかのレイヤーまたはフレームに[タイムラインを使ってセルを移動する](move-cels.md)ことができます。
 
-## Change Opacity
+## 不透明度を変更する
 
-On [RGB](color-mode.md#rgb) images each cel has its own opacity
-level. You can use the slider at the status bar to modify its opacity:
+[RGB](color-mode.md#rgb)画像ではそれぞれのセルで不透明度を持つことができます。
+ステータスバーにあるスライダーを使うことで不透明度を変更できます：
 
 ![Cel Opacity](cel/cel-opacity.gif)
 
-You can do the same right-clicking a cel and selecting *Properties* option (or *Frame > Cel Properties* menu):
+セルを右クリックし`プロパティ`（もしくはメニューの *フレーム > セルプロパティ* ）をクリックすることでも変更が可能です:
 
 ![Cel Properties](cel/cel-properties.gif)
 
@@ -32,5 +29,5 @@ You can do the same right-clicking a cel and selecting *Properties* option (or *
 
 **SEE ALSO**
 
-[Linked Cels](linked-cels.md) |
-[Timeline](timeline.md)
+[リンクしたセル](linked-cels.md) |
+[タイムライン](timeline.md)

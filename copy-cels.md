@@ -1,21 +1,20 @@
-# Copy Cels
+# セルのコピー
 
-Use the [timeline](timeline.md) to copy cels:
+[タイムライン](timeline.md)でセルをコピーできます:
 
 ![Copy cels](copy-cels/copy-cels.gif)
 
-1. Select a range of cels you want to copy.
-2. Move the mouse to the selection border.
-3. Hold <kbd>Ctrl</kbd> or <kbd>Alt</kbd> key and start dragging.
-4. Drop the copy where you want, holding <kbd>Ctrl</kbd> or <kbd>Alt</kbd> keys.
+1. コピーしたいセルの範囲を選択します。
+2. 選択範囲の境界線にマウスを動かします。
+3. <kbd>Ctrl</kbd> または <kbd>Alt</kbd> キーを押しながらドラッグします。
+4. <kbd>Ctrl</kbd> または <kbd>Alt</kbd> キーを押しながら好きなところでドロップします。
 
-Note that you can copy cels beyond the end of the animation. In this
-case new empty frames are created automatically.
+アニメーションの終わりを超えてセルをコピーすることもできます。この場合、空のフレームが自動的に作成されます。
 
 ---
 
 **SEE ALSO**
 
-[Move Cels](move-cels.md) |
-[Copy Frames](copy-frames.md) |
-[Timeline](timeline.md)
+[セルの移動](move-cels.md) |
+[フレームのコピー](copy-frames.md) |
+[タイムライン](timeline.md)

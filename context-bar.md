@@ -1,51 +1,50 @@
-# Context Bar
+# コンテキストバー
 
-(*Work-in-progress*)
+(*作成中*)
 
-The context bar shows specific options for the active tool.  Also it
-changes depending on the state of the active document. E.g. when we
-move the selection.
+コンテキストバーにはアクティブなツールの特定のオプションが表示されます。
+オプションは、アクティブなドキュメントの状態によっても変化します。たとえば、選択範囲を移動するときなどです。
 
 ![Context bar](context-bar/contextbar.png)
 
-## Pencil-like tools
+## ペンツールのようなツール
 
-This is the context bar for the Pencil tool:
+これはペンツールのコンテキストバーです:
 
 ![Context bar for pencil tool](context-bar/pencil.png)
 
-The first elements are Brush type/shape:
+最初の項目はブラシタイプとブラシ形状です:
 
 ![Brush type](context-bar/brushtype.png)
 
-The brush size (in pixels):
+ブラシサイズ（ピクセル単位）:
 
 ![Brush size](context-bar/brushsize.png)
 
-And the brush angle:
+ブラシ角度:
 
 ![Brush angle](context-bar/brushangle.png)
 
-It's useful for line brush type:
+ブラシ角度は細い線のブラシを使うときに便利です:
 
 ![Selet brush angle](context-bar/brushangle-change.gif)
 
-## Selection tools
+## 選択ツール
 
 ![Selection tool](context-bar/selection.png)
 
-## Moving selection
+## 選択範囲の移動
 
-(*Work-in-progress*)
+(*作成中*)
 
 ![Moving selection](context-bar/selection.png)
 
-## Eyedropper
+## スポイト
 
-(*Work-in-progress*)
+(*作成中*)
 
-## Paint Bucket tool
+## バケツツール
 
-(*Work-in-progress*)
+(*作成中*)
 
 ![Paint bucket](context-bar/paintbucket.png)

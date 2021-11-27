@@ -1,7 +1,7 @@
-# Default Palette
+# デフォルトパレット
 
-New sprites are create with a default palette. And it's [Richard "DawnBringer" Fhager 32 colors palette](http://pixeljoint.com/forum/forum_posts.asp?TID=16247) by default.
+新規のスプライトはデフォルトパレットを持った状態で作成されます。デフォルトではデフォルトパレットは [Richard "DawnBringer" Fhager 32 colors palette](http://pixeljoint.com/forum/forum_posts.asp?TID=16247) になります。
 
-Anyway you can change this default palette using the *Save as Default Palette* option:
+デフォルトパレットは、*デフォルトパレットとして保存* オプションで変更が可能です：
 
 <a href="http://imgur.com/05tiLaW"><img src="http://i.imgur.com/05tiLaW.gif" title="source: imgur.com" /></a>

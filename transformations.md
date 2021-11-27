@@ -1,15 +1,15 @@
-# Transformations
+# 変形
 
-(*Work-in-progress*)
+(*作成中*)
 
-* [Flip selection](flip.md)
-* [Change canvas size](canvas.md)
-* [Move selection](move-selection.md) or [move complete layer/cel](move-tool.md)
-* [Resize selection](resize.md)
-* [Rotate selection](rotate.md)
+* [選択範囲を反転](flip.md)
+* [キャンバスサイズを変更](canvas.md)
+* [選択範囲を移動](move-selection.md)、または[レイヤー・セル全体を移動](move-tool.md)
+* [選択範囲をリサイズ](resize.md)
+* [選択範囲を回転](rotate.md)
 
 ---
 
 **SEE ALSO**
 
-[Selecting](selecting.md)
+[選択](selecting.md)

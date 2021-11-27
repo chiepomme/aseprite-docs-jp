@@ -1,4 +1,4 @@
-# Aseprite Command Line Interface
+# Aseprite コマンドラインインターフェース
 
 You can convert or export your sprites to other formats (or
 textures+json data) from the command line.  See

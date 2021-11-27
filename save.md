@@ -1,22 +1,19 @@
-# Save
+# 保存
 
-You can save your sprite using *File > Save* menu.
+メニューの *ファイル > 上書き保存* からスプライトを保存できます。
 
-Aseprite uses `.aseprite` (or `.ase`) file types to save full sprite
-information (layers, frames, tags, palettes, etc.). But you can save
-your sprite as other file types if you don't need all this information.
-For example, you can [open](open.md) a `.png` file, editing it,
-and save it again as `.png` (without using the `.aseprite` format).
+Aseprite は全てのスプライトの情報（レイヤー、フレーム、タグ、パレットなど）を保存するために `.aseprite` （または `.ase`）というファイル形式を使用します。
+ただし、全ての情報までは必要ないのであれば、ほかの形式でスプライトを保存することも可能です。
+たとえば、`.png` ファイルを[開いて](open.md)編集し、再度（`.aseprite` 形式ではなく）`.png` で保存する場合などがあります。
 
-## Export
+## エクスポート
 
-If you want to export your sprite as a `.png` file or a `.gif`
-animation, you can use the *File > Export* option. See the
-[Exporting](/docs/exporting/) section for more information.
+スプライトを `.png` ファイルや `.gif` アニメとして出力したい場合には、メニューの *ファイル > エクスポート* が使えます。
+詳しくは、[エクスポート](/docs/exporting/)の項目を見てください。
 
 ---
 
 **SEE ALSO**
 
-[Open](open.md) |
-[Exporting](exporting.md)
+[開く](open.md) |
+[エクスポート](exporting.md)

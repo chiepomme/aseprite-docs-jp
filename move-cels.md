@@ -1,27 +1,25 @@
-# Move Cels
+# セルの移動
 
-Use the [timeline](timeline.md) to move cels:
+[タイムライン](timeline.md)を使ってセルを移動できます。
 
 ![Move Cels](move-cels/move-cels.gif)
 
-1. Select a range of cels you want to move.
-2. Put the mouse above the selection border.
-3. Start dragging the from selection border.
-4. Drop the cels where you want.
+1. 移動したいセルの範囲を選択します。
+2. 選択範囲の境界線の上にマウスを持って行きます。
+3. 選択範囲の境界線をドラッグします。
+4. 好きな場所にセルをドロップします。
 
-Note that you can move cels beyond the end of the animation. In this
-case new empty frames are created automatically.
+セルをアニメーションの終わりを越えて移動することもできます。この場合、空の新規フレームが自動で作成されます。
 
-## Canvas Position
+## キャンバスの位置
 
-You can move the cel canvas position (*x* and *y* coordinates) using
-the [Move tool](move-tool.md) ![Move tool icon](tools/move-tool.png).
+[移動ツール](move-tool.md)![Move tool icon](tools/move-tool.png) を使って、セルのキャンバス位置（*x* と *y* 座標）を移動することができます。
 
 ---
 
 **SEE ALSO**
 
-[Copy Cels](copy-cels.md) |
-[Move Frames](move-frames.md) |
-[Move Tool](move-tool.md) |
-[Timeline](timeline.md)
+[セルのコピー](copy-cels.md) |
+[フレームの移動](move-frames.md) |
+[移動ツール](move-tool.md) |
+[タイムライン](timeline.md)

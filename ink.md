@@ -1,55 +1,44 @@
-# Ink
+# インク
 
-<img src="/docs/ink/inks.png" alt="Inks" class="x2" />
+<img src="ink/inks.png" alt="Inks" class="x2" />
 
-The ink modifies the way the [active tool](tool-bar.md) paints. The
-default ink is the *Simple Ink*.
+インクは[アクティブなツール](tool-bar.md)が描画する方法を変更します。
+デフォルトのインクは *シンプルインク* になっています。
 
-## Simple Ink
+## シンプルインク
 
-It acts in the following way:
+シンプルインクは以下のように動作します。
 
-1. If the [foreground color](color-bar.md#foreground-color) is opaque
-   (alpha = 255 = 100%), it paints with the given opaque color.
-1. If the color has alpha (0 < alpha < 255), it composite the color
-   with the layer surface.
-1. If the color is transparent (alpha = 0, Mask color), the tool acts
-   like an Eraser.
+1. [前景色](color-bar.md#前景色)が不透明（アルファ = 255 = 100%）であれば、その不透明な色を塗ります。
+1. 前景色が半透明の場合（0 < アルファ < 255）、現在塗られている色と合成します。
+1. 前景色が完全に透明の場合（アルファ = 0 または マスクカラー）には、消しゴムのように動作します。
 
-## Alpha Compositing
+## アルファの合成
 
-It merges the [foreground color](color-bar.md#foreground-color) with
-the layer surface depending on the alpha value of the foreground color:
+[前景色](color-bar.md#foreground-color)と現在塗られている色を前景色のアルファ値を使って合成します。
 
-1. If alpha = 255 = 100%, the foreground color will be completely opaque.
-1. If alpha = 128 = 50%, the foreground color is merged 50% with the layer surface color.
-1. If alpha = 0 = 0%, the painting has no effect because the color is completely transparent.
+1. 前景色のアルファ = 255 = 100% の場合、前景色は完全に不透明になります。（訳注：前景色で塗られます）
+1. 前景色のアルファ = 128 = 50% の場合、前景色の 50% と現在塗られている色の 50% が合成されます。
+1. 前景色のアルファ = 0 = 0% の場合、前景色が 0% の透明になるので何も塗られません。
 
-## Copy Alpha+Color
+## アルファと色をコピー
 
-It replaces the layer surface pixels with the active foreground color
-with its alpha value. It doesn't make any kind of alpha compositing,
-it just takes the active color and put it exactly as it is in the
-destination pixel.
+現在塗られているピクセルを、アクティブな前景色の色とアルファで置き換えます。
+アルファを使った合成は全く行われず、単純に前景色をそのまま対象ピクセルに塗ります。
 
-E.g. In this case, if alpha = 128 = 50%, the final color will be the
-same as the foreground color with alpha = 128, ignoring the layer
-surface.
+たとえば、前景色のアルファ = 128 = 50% の場合、最終的なピクセルは前景色と同じ色でアルファが 128 のピクセルになり、元々塗られていた色は無視されます。
 
-## Lock Alpha
+## アルファをロック
 
-In this case the original alpha values from the layer surface are
-kept, and only the RGB color components are replaced from the
-foreground color.
+元々塗られているアルファの値を維持して、RGB の色だけを前景色のもので置き換えます。
 
-## Shading
+## シェーディング
 
-See the [shading section](shading.md) for more information about this
-special ink for pixel-art.
+シェーディングはピクセルアート向けの特別なインクです。詳しくは、[シェーディングの項目](shading.md)を見てください。
 
 ---
 
 **SEE ALSO**
 
-[Drawing](drawing.md) |
-[Shading](shading.md)
+[描く](drawing.md) |
+[シェーディング](shading.md)

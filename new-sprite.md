@@ -1,17 +1,15 @@
-# New Sprite
+# 新規スプライト
 
-You can create a new sprite from *File > New* menu (<kbd>Ctrl+N</kbd> or <kbd>⌘N</kbd>).
+メニューの *ファイル > 新規* （<kbd>Ctrl+N</kbd> または <kbd>⌘N</kbd>）で新規スプライトを作成できます。
 
 ![New sprite dialog](new-sprite/newsprite.png)
 
-Here you select the sprite dimension (in pixels), its
-[color mode](color-mode.md), and the default background color.
-The sprite is created with a specific [palette by default](default-palette.md).
+新規スプライト作成ウィンドウでは、スプライトのピクセル単位でのサイズや、[カラーモード](color-mode.md)、デフォルトの背景色を選択できます。
+スプライトは、[デフォルトパレット](default-palette.md)を持った状態で作成されます。
 
-## New Sprite from Selection
+## 選択範囲から新規スプライトを作成
 
-You can create a new sprite from the active selection using
-*Edit > New Sprite from Selection* (<kbd>Ctrl+Alt+N</kbd> or <kbd>⌥⌘N</kbd>):
+メニューの *編集 > 選択範囲から新規スプライトを作成* （<kbd>Ctrl+Alt+N</kbd> または <kbd>⌥⌘N</kbd>）を使用して、アクティブな選択範囲から新規スプライトを作成できます。
 
 ![New sprite from selection](new-sprite/new-sprite-from-selection.gif)
 
@@ -19,4 +17,4 @@ You can create a new sprite from the active selection using
 
 **SEE ALSO**
 
-[Color Mode](color-mode.md)
+[カラーモード](color-mode.md)

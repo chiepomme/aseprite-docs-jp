@@ -1,4 +1,4 @@
-# New Layer
+# 新規レイヤー
 
 Add new layers using *Layer > New > New Layer* menu (`Shift+N` key). Also
 you can right-click a layer in the [timeline](timeline.md) and

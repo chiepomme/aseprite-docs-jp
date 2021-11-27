@@ -1,105 +1,82 @@
-# Layers
+# レイヤー
 
-One sprite can be separated in several layers. You can see them
-in the [timeline](timeline.md):
+1つのスプライトはレイヤーに分けることができます。レイヤーは[タイムライン](timeline.md)に表示されます。
 
 ![Layer in timeline](layers/layer-in-timeline.png)
 
-Each layer has several options:
+レイヤーにはいくつかのオプションがあります。
 
 ![Layer icons](layers/layer-options.png)
 
-*Layer Name*: Text to identify this layer.  You can change the layer
-name double-clicking the layer, or from *Layer > Properties* menu (<kbd>Shift+P</kbd> key).
+*レイヤー名 (Layer Name)*：このレイヤーを識別するためのテキストです。レイヤー名はレイヤーをダブルクリックするか、メニューの *レイヤー > プロパティ* （<kbd>Shift+P</kbd>キー）で変更できます。
 
-*Cels*: A set of [cels](cel.md), frames that contain something
-visible for this specific layer in the specific frame.
+*セル (Cels)*：[セル](cel.md)の集まりです。1つのセルには特定のレイヤーの特定のフレームの内容が含まれています。
 
-*Visible*: It indicates if the layer is visible ![Visible layer icon](layers/visible-layer.png)
-or hidden ![Hidden layer icon](layers/hidden-layer.png). You can switch the layer visibility
-using *Layer > Visible* menu or <kbd>Shift+X</kbd> key.
+*表示/非表示 (Visible)*： 表示状態![Visible layer icon](layers/visible-layer.png)か非表示状態![Hidden layer icon](layers/hidden-layer.png)かを表します。表示/非表示はメニューの *レイヤー > 可視化* か <kbd>Shift+X</kbd>キーで切り替えられます。（訳注：もちろん目のアイコンをクリックしても切り替わります）
 
-*Locked*: If the layer is locked ![Locked layer icon](layers/locked-layer.png), you cannot draw on it.
-By default all layers are unlocked/editable ![Editable layer icon](layers/editable-layer.png).
+*ロック (Locked)*: レイヤーがロックされている![Locked layer icon](layers/locked-layer.png)場合、そのレイヤーに描くことはできません。
+デフォルトではレイヤーはロックされておらず![Editable layer icon](layers/editable-layer.png)編集可能になっています。
 
-*Continuous*: This option is used to indicate what kind
-of [cels](cel.md) you prefer when they are created for this
-specific layer. See the [Continuous Layers](continuous-layers.md)
-section for more information.
+*自動結合 (Continuous)*: このオプションは、このレイヤーに作られる[セル](cel.md)の種類（結合か非結合か）を指定します。
+詳しくは、[自動結合レイヤー](continuous-layers.md)の項目を見てください。
 
-### Common Operations
+### 一般的な操作
 
-* [Add new layer](new-layer.md)
-* [Move layers](move-layers.md)
-* [Copy layers](copy-layers.md)
+* [新規レイヤーを追加](new-layer.md)
+* [レイヤーを移動](move-layers.md)
+* [レイヤーをコピー](copy-layers.md)
 
-## Background Layer
+## 背景レイヤー
 
-The background layer is an opaque layer (without alpha/transparent
-component) that cannot be moved. It's created by default when you
-select an opaque color in the *File > New* window, or when you open a
-file (e.g. a `.png` file) that doesn't contain the alpha component.
+背景レイヤーは動かすことの出来ない不透明レイヤー（アルファがありません）です。
+メニューの *ファイル > 新規* で開いたウィンドウで不透明の背景を選ぶと作られます。
+もしくは、アルファを含まないファイル（たとえば不透明の `.png` など）を開くことでも作られます。
 
-A sprite can contain only one background layer and it's always at the
-bottom of the layers stack in the [timeline](timeline.md).
+1つのスプライトは背景レイヤーを1つしか持つことができず、必ず[タイムライン](timeline.md)で一番下のレイヤーになります。
 
-When you select a portion of the background layer and clear it (using
-*Edit > Clear* menu), the selection will be cleared with the active
-[background color](color-bar.md).
+背景レイヤーの一部分を選択して消す（メニューの *編集 > 削除* ）と、選択範囲は[背景色](color-bar.md)で塗りつぶされます。
 
-## Transparent Layers
+## 透過レイヤー
 
-All layers with an alpha channel are called transparent layers.
-You can have several of these kind of layers in the same sprite.
-You can stack them as you want using the [timeline](timeline.md).
-And you can displace these layers using the [Move tool](move-tool.md) ![Move tool icon](tools/move-tool.png)).
+アルファチャンネルを持つ全てのレイヤーを透過レイヤーと呼びます。1つのスプライトに複数の透過レイヤーを持つことができます。透過レイヤーは[タイムライン](timeline.md)を使って好きな順番に重ねることができます。[移動ツール](move-tool.md) ![Move tool icon](tools/move-tool.png)を使って、移動することも出来ます。
 
-When you select a portion of a transparent layer and clear it (using
-*Edit > Clear* menu), the selection will be cleared with
-[transparent color](transparent-color.md).
+透過レイヤーの一部分を選択して消す（メニューの *編集 > 削除* ）と、選択範囲は[透明色](transparent-color.md)で塗りつぶされます。
 
-You can use *Layer > New > New Layer* menu or <kbd>Shift+N</kbd> to
-create a new transparent layer.
+メニューの *レイヤー > 新規 > 新規レイヤー* または、<kbd>Shift+N</kbd> を使うことで、新しい透過レイヤーを作成できます。
 
-## Background from Layer
+## レイヤーから背景に変換
 
-If there is no background layer, you can convert any transparent
-layer to the background using the *Layer > Convert To > Background*
-menu. All transparent pixels will be filled with the active
-[background color](color-bar.md#background-color).
+まだ背景レイヤーがない場合には、メニューの *レイヤー > 変換 > 背景* で、透過レイヤーを背景レイヤーに変換できます。
+透明なピクセルは現在の[背景色](color-bar.md#背景色)で塗りつぶされます。
 
-> Previously, on Aseprite v1.2 the option was *Layer > Background from Layer*
+> Aseprite v1.2 では、このオプションは *レイヤー > Background from Layer* でした。
 
-## Layer from Background
+## 背景からレイヤーに変換
 
-If you want to convert the background to a transparent layer
-(e.g. because you want to move it with the [Move tool](move-tool.md)
-![Move tool icon](tools/move-tool.png)), you can use the
-*Layer > Convert To > Layer* menu.
+背景レイヤーから透過レイヤーに変換したい場合、メニューの *レイヤー > 変換 > レイヤー* で変換できます。
+たとえば、[移動ツール](move-tool.md) ![Move tool icon](tools/move-tool.png) でレイヤーを動かしたいときに使用します。
 
-> Previously, on Aseprite v1.2 the option was *Layer > Layer from Background*
+> Aseprite v1.2 では、このオプションは *レイヤー > Layer from Background* でした。
 
-## Layer Group
+## レイヤーグループ
 
-You can [group layers](layer-group.md) to handle a set of layers as
-one unity.
+[レイヤーをグループ化](layer-group.md)することでレイヤーをひとまとめに扱うことができます。
 
-## Tilemap Layer
+## タイルマップレイヤー
 
-Since **Aseprite v1.3**, you can create [tilemap layers](tilemap.md)
-from *Layer > New > New Tilemap Layer* menu or using <kbd>Space+N</kbd>.
-You can also use *Layer > Convert To > Tilemap* from any regular transparent
-layer (the tiles will be created from the active grid settings).
+**Aseprite v1.3** から、メニューの *レイヤー > 新規 > 新規タイルマップレイヤー* または、<kbd>Space+N</kbd>で[タイルマップレイヤー](tilemap.md)を作成することができるようになりました。
+また、メニューの *レイヤー > 変換 > タイルマップ* を使って、通常の透過レイヤーを変換することもできます。
+（タイルはアクティブなグリッド設定から作成されます。）
 
-## New Layers from Selection
+## 選択範囲から新しいレイヤーを作る
 
-* <kbd>Ctrl+J</kbd> or <kbd>⌘J</kbd>: Copies the [selection](selecting.md) and creates a new layer from it
-* <kbd>Ctrl+Shift+J</kbd> or <kbd>⇧⌘J</kbd>: Cuts the [selection](selecting.md) and creates a new layer from it
+* <kbd>Ctrl+J</kbd> または <kbd>⌘J</kbd>：[選択範囲](selecting.md)をコピーして、その内容で新しいレイヤーを作成します。
+* <kbd>Ctrl+Shift+J</kbd> または <kbd>⇧⌘J</kbd>：[選択範囲](selecting.md)を切り取って、その内容で新しいレイヤーを作成します。
 
 ---
 
 **SEE ALSO**
 
-[Timeline](timeline.md) |
-[Continuous Layers](continuous-layers.md) |
-[Move tool](move-tool.md)
+[タイムライン](timeline.md) |
+[自動結合レイヤー](continuous-layers.md) |
+[移動ツール](move-tool.md)

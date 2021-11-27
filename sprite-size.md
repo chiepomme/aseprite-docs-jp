@@ -1,9 +1,9 @@
-# Sprite Size
+# スプライトのサイズ
 
-The sprite size is specified when you create a new sprite from *File > New* menu.
-But you can change it in several ways. You can change:
+スプライトのサイズは、メニューの *ファイル > 新規* で作成するときに指定することができます。
+以下の方法で変更も可能です：
 
-* [Canvas size](canvas.md)
-* [Resize sprite content](resize.md)
+* [キャンバスサイズの変更](canvas.md)
+* [スプライトの中身をリサイズ](resize.md)
 
-Also you can use the [Command Line Interface](cli.md#resize-one-sprite-to-several-dimensions) for the same purpose.
+また、同じ目的で[コマンドラインインターフェース](cli.md#resize-one-sprite-to-several-dimensions)も使えます。

@@ -1,7 +1,7 @@
-# Status Bar
+# ステータスバー
 
-The status bar is the region at the bottom of the screen:
+ステータスバーは画面の下の領域のことです：
 
 ![Statusbar Overview](status-bar/overview.png)
 
-It shows different content depending on the active mouse position.
+マウスの位置によって異なる内容が表示されます。

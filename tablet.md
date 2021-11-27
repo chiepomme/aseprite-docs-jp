@@ -1,4 +1,4 @@
-# Tablet
+# タブレット
 
 Since Windows 8, Microsoft introduced a new API to use your tablet
 with Windows program: the pointer API. Since Aseprite v1.2.19.1 you
