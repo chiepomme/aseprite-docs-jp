@@ -1,33 +1,27 @@
-# Linked Cels
+# 結合セル
 
-Two cels are linked when they share their image and the *xy*-coordinate.
-Linked cels looks as follow in the [timeline](timeline.md):
+2つのセルが同じ画像を持ち、同じXY座標を持つとき、それらのセルは結合します。
+
+[タイムライン](timeline.md)で結合セルは以下のように表示されます。
 
 ![Linked Cels](linked-cels/linked-cels.png)
 
-When you modify one of these cels, all linked cels are modified. In
-this way you can propagate the same change into several
-frames. E.g. If you have a static background, you would prefer linked
-cels, so you can make changes just in one cel to view the change in
-the whole animation.
+結合したセルの1つを変更すると、ほかのセルも一緒に変更されます。これにより、同じ変更を複数のフレームに伝搬させることができます。
+たとえば、動かない背景を使用する場合に結合セルを使用することで、1つのセルを変更しただけでアニメーション全体の見た目を変更することができます。
 
-To create linked cels you have to
-[copy cels](copy-cels.md)
-in a [continuous layer](continuous-layers.md)
-(i.e. a layer with the Continuous icon ![Continuous icon](continuous-layers/continuous-layer.png)).
+結合セルを作成するには、[自動結合レイヤー](continuous-layers.md)で[セルをコピー](copy-cels.md)します。
+（自動結合レイヤーは自動結合アイコン![Continuous icon](continuous-layers/continuous-layer.png) が表示されているレイヤーです。）
 
-## Unlink Cels
+## セルの結合を解除
 
-There is a way to unlink cels using right-click and *Unlink* option in
-the timeline:
+タイムライン上でセルを右クリックして *結合を解除* を選択することで解除できます。
 
 ![Unlink Cels](linked-cels/unlink-cels.gif)
 
-Unlinked cels will contain their own copy of the image. So now if you
-modify them the change will not be propagated to other cels.
+結合が解除されたセルは、共有の画像ではなくコピーされた画像を持ちます。そのため、セルを変更してもほかのセルには変更が伝搬しません。
 
 ---
 
 **SEE ALSO**
 
-[Continuous Layers](continuous-layers.md)
+[自動結合レイヤー](continuous-layers.md)
