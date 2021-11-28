@@ -1,45 +1,34 @@
-# Slices
+# スライス
 
-With the Slice tool ![Slice tool icon](tools/slice-tool.png) you can
-indicate regions of your sprite and assign a name/label to that region
-with some extra user defined information. There is support to specify
-[9-slices](https://en.wikipedia.org/wiki/9-slice_scaling)/9-patches
-information.
+スライスツール![Slice tool icon](tools/slice-tool.png) を使うと、スプライトの特定の領域を定義し、名前やラベルやユーザー定義の情報を付与できます。
+[9スライス](https://en.wikipedia.org/wiki/9-slice_scaling)・9パッチの情報を付与することも可能です。
 
-With this tool you can:
+このツールを使うと以下のことができます。
 
-1. Create a new slice marking a rectangular region pressing the mouse
-   button, dragging the mouse, and releasing the button.
-1. If the marked rectangle touches existing slices, those slices will
-   be selected.
-1. You can drag-and-drop a set of selected slices to move them to
-   other place. Or you can resize the whole set of slices dragging
-   from the corners or edges.
-1. After selecting some slices you can delete them pressing the Delete
-   key or *Edit > Delete* menu option.
-1. Double-clicking a slice you will see the [Slice
-   Properties](#slice-properties) dialog.
+1. マウスでドラッグすることで、長方形の領域を定義する新しいスライスを作成できます。
+1. ドラッグした領域にすでにスライスがある場合、それらスライスが選択されます。
+1. 選択したスライスをドラッグすることでほかの場所に移動することができます。選択範囲の角や辺をドラッグすることでまとめてサイズ変更することもできます。
+1. スライスを選択した後、<kbd>Delete</kbd>キーやメニューの *編集 > 削除* で削除できます。
+1. スライスをダブルクリックすると[スライスのプロパティ](#slice-properties)ダイアログが開きます。
 
-## Slice Properties
+## スライスのプロパティ
 
-If you double-click a slice, you will see its properties:
+スライスをダブルクリックすると、スライスのプロパティを見ることができます。
 
 ![Slice Properties Dialog](slices/properties.png)
 
-Here you can specify:
+スライスのプロパティでは以下の設定ができます。
 
-1. the bounds of the slice in the canvas
-1. a 9-slices property to specify an internal rectangle to sub-divide the bounds into sub-slices
-1. a pivot to specify the central/base location of the sprite inside the slice
+1. キャンバス上の位置や大きさ。
+1. 9スライスの設定として、子スライスに分割するためのスライス内部の長方形の位置と大きさ。
+1. スライスの支点（ピボット）。中心点や基点となります。
 
-## Exporting Slices
+## スライスをエクスポートする
 
-You can export each slice as a different sprite using the
-[--split-slice option](cli.md/#split-slices).
+CLI の [--split-slice option](cli.md/#split-slices) オプションを使用すると、それぞれのスライスを別々のスプライトとして出力できます。
 
-You can also export the slice information in a sprite sheet JSON using
-the [--data option](cli.md/#data) or the *File > Export Sprite Sheet*
-menu option with the JSON output checked. This is an example of the exported data:
+CLI の [--data option](cli.md/#data) またはメニューの *ファイル > スプライトシートのエクスポート* を使用すると、スライスの情報をスプライトシートの JSON の中に含めることができます。
+以下はエクスポートされるデータのサンプルです。
 
 ```json
 { ...
@@ -59,4 +48,4 @@ menu option with the JSON output checked. This is an example of the exported dat
 
 **SEE ALSO**
 
-[Drawing](drawing.md)
+[描く](drawing.md)

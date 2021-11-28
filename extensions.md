@@ -1,34 +1,25 @@
-# Extensions
+# 拡張機能
 
-Since **[Aseprite v1.2-beta10](https://www.aseprite.org/release-notes/#aseprite-v1-2-beta10)**
-you can add/remove extensions to/from Aseprite. Extensions are
-distributed as `.aseprite-extension` (`.zip`) files and you can
-manage them from *Edit > Preferences > Extensions*:
+**[Aseprite v1.2-beta10](https://www.aseprite.org/release-notes/#aseprite-v1-2-beta10)** から、Aseprite に拡張機能を追加・削除できるようになりました。
+
+拡張機能は、`.aseprite-extension` (`.zip`) ファイルになっていて、メニューの *編集 > 環境設定 > 拡張機能* で管理できます。
 
 ![Extensions in Preferences](extensions/extensions.png)
 
-## Add/Remove Extensions
+## 拡張機能を追加・削除する
 
-In *Edit > Preferences > Extensions* there is a "Add Extension"
-button. You can use it to select a `.aseprite-extension` or `.zip`
-file.  After installing the extension it will be uncompressed in your
-[configuration directory](preferences-folder.md) inside the
-`extensions` subfolder.
+メニューの *編集 > 環境設定 > 拡張機能* に、「拡張機能を追加」ボタンがあります。このボタンを利用することで、`.aseprite-extension` または `.zip` ファイルを直接選択することができます。拡張機能のインストール後、このファイルは[環境設定フォルダ](preferences-folder.md)の `extensions` フォルダに解凍されます。
 
-## File Content
+## ファイルの内容
 
-An extension/plugin is exactly the same as a `.zip` file but you can
-rename the file extension to `.aseprite-extension` so the user can
-double-click it in Windows Explorer or macOS Finder.
+拡張機能やプラグインは完全に `.zip` ファイルと同一のものですが、ファイルの拡張子を `.aseprite-extension` に変更することができます。そうすることで、ユーザーはエクスプローラーや Finder でダブルクリックしてインストールすることができるようになります。
 
-The content of the `.zip` file varies depending on the kind of
-extension that you want to create, but at least they must contain one
-file inside: the `package.json` file.
+`.zip` ファイルの中身は、どのタイプの拡張機能を作るかによって変わります。しかし、どのタイプであっても、`package.json` は必ず含んでいます。
 
-The structure of a `.aseprite-extension` file depends on the kind of extension:
+`.aseprite-extension` ファイルの構造は拡張機能の種類によって変わります。
 
-* [Palettes](extensions/palettes.md)
-* [Languages](extensions/languages.md)
-* [Themes](extensions/themes.md)
-* [Dithering Matrices](extensions/dithering-matrices.md)
-* [Plugins with Scripts](https://github.com/aseprite/api/blob/master/api/plugin.md#plugin)
+* [パレット](extensions/palettes.md)
+* [言語](extensions/languages.md)
+* [テーマ](extensions/themes.md)
+* [ディザリング行列](extensions/dithering-matrices.md)
+* [スクリプトによるプラグイン](https://github.com/aseprite/api/blob/master/api/plugin.md#plugin)

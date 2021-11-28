@@ -1,22 +1,21 @@
-# Canvas Size
+# キャンバスサイズ
 
-The canvas is the visible area of the sprite. You can change the
-canvas size using *Sprite > Canvas Size...* menu.
+キャンバスはスプライトの見えているエリアのことです。
+キャンバスサイズは、メニューの *スプライト > キャンバスのサイズ...* から変更できます。
 
 ![Canvas Preview](canvas/canvas.gif)
 
-In this window you can change the `Width` or `Height` manually, or
-using the blue rules in the editor window.
+このウィンドウでは`幅`と`高さ`を数値入力で変えたり、
+エディタウィンドウに表示された青い境界線を使って変えたりすることができます。
 
-## Crop
+## クロップ
 
-You can change the canvas size using the current selection bounds:
+現在の選択範囲を使ってキャンバスサイズを変更することができます：
 
 ![Crop Preview](canvas/crop.gif)
 
-## Trim
+## トリム
 
-You can remove transparent borders from canvas automatically
-using the *Sprite > Trim* menu.
+メニューの *スプライト > トリム* で四隅の透明な部分を、自動で切り詰めることができます。
 
 ![Trim Preview](canvas/trim.gif)

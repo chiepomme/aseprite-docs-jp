@@ -1,20 +1,20 @@
-### Table of content
+### 目次
 
-[Overview](overview.md)
+[概要](overview.md)
 
-[Basics](basics.md)
-* [Image & Sprite](sprite.md)
-* [Color](color.md)
-* [Drawing](drawing.md)
-* [Selecting](selecting.md)
-* [Transformations](transformations.md)
+[基本](basics.md)
+* [画像とスプライト](sprite.md)
+* [カラー](color.md)
+* [描く](drawing.md)
+* [選択](selecting.md)
+* [変形](transformations.md)
 
-[Sprite](sprite.md)
-* [Layers](layers.md)
-* [Animation](animation.md)
-* [Tilemap](tilemap.md)
+[スプライト](sprite.md)
+* [レイヤー](layers.md)
+* [アニメーション](animation.md)
+* [タイルマップ](tilemap.md)
 
-Files & Customization
-* [Exporting](exporting.md) &mdash; [CLI](cli.md)
-* [Extensions](extensions.md)
-* [Scripting](scripting.md)
+ファイルとカスタマイズ
+* [エクスポート](exporting.md) &mdash; [CLI](cli.md)
+* [拡張機能](extensions.md)
+* [スクリプト](scripting.md)

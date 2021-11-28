@@ -1,21 +1,19 @@
-# Scripting
+# スクリプト
 
-**[Aseprite v1.2.10-beta2](https://www.aseprite.org/release-notes/#aseprite-v1-2-10-beta10)**
-introduced the possibility to write scripts with Lua:
+**[Aseprite v1.2.10-beta2](https://www.aseprite.org/release-notes/#aseprite-v1-2-10-beta10)** から、Lua でスクリプトを書けるようになりました。
 
-* [API Reference](https://github.com/aseprite/api#aseprite-api)
-* [Known issues and report bugs](https://github.com/aseprite/api/issues)
+* [API リファレンス](https://github.com/aseprite/api#aseprite-api)
+* [既知の問題とバグの報告](https://github.com/aseprite/api/issues)
 
-Scripts are located in the [user scripts folder](https://community.aseprite.org/t/locate-user-scripts-folder/2170)
-that you can easily locate going to *File > Scripts > Open Script Folder*.
+スクリプトは[ユーザースクリプトフォルダ](https://community.aseprite.org/t/locate-user-scripts-folder/2170)に置かれます。このフォルダは、メニューの *ファイル > スクリプト > スクリプトフォルダを開く* で簡単に開くことができます。
 
-Script Examples:
+以下はスクリプトのサンプルです。
 
-* [Aseprite Script Examples](https://community.aseprite.org/t/aseprite-script-examples/2611)
-* [Touch Toolbar helper](https://community.aseprite.org/t/touch-toolbar-helper/2169)
+* [Aseprite スクリプト例](https://community.aseprite.org/t/aseprite-script-examples/2611)
+* [タッチツールバーヘルパー](https://community.aseprite.org/t/touch-toolbar-helper/2169)
 
 ---
 
 **SEE ALSO**
 
-[Extensions](extensions.md)
+[拡張機能](extensions.md)

@@ -1,12 +1,10 @@
-# Reverse Frames
+# フレームを反転
 
-You can reverse frames selecting a range of frames in the
-[timeline](timeline.md) and using the *Frame > Reverse Frames* menu
-option.
+フレームを反転するには、[タイムライン](timeline.md)でフレームを範囲選択してから、メニューの *フレーム > フレームを反転* を選択してください。
 
 ---
 
 **SEE ALSO**
 
-[Animation](animation.md) |
-[Timeline](timeline.md)
+[アニメーション](animation.md) |
+[タイムライン](timeline.md)

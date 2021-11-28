@@ -1,5 +1,5 @@
-# Rotate Selection
+# 選択範囲を回転
 
 ![Rotate Handles](rotate/rotatehandles.gif)
 
-With <kbd>Shift</kbd> key you can snap angles (0º, 45º, 90º, etc.)
+<kbd>Shift</kbd>キーで角度のスナップ（0°・45°・90°・など）を使用できます。

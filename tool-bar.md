@@ -1,8 +1,8 @@
-# Tool Bar
+# ツールバー
 
-The tool bar contains several tools that you can use for different purposes:
+ツールバーは様々な用途に向けたツールを含んでいます:
 
-* [Paint](drawing.md) ![Pencil Icon](tools/pencil-tool.png)
-* [Pick colors](eyedropper.md) ![Eyedropper Icon](tools/eyedropper-tool.png)
-* [Zoom](zoom.md) ![Zoom Icon](tools/zoom-tool.png)
-* [Select and transform regions](selecting.md) ![Marquee Tool Icon](tools/marquee-tool.png)
+* [ペイントする](drawing.md) ![Pencil Icon](tools/pencil-tool.png)
+* [色を取得する](eyedropper.md) ![Eyedropper Icon](tools/eyedropper-tool.png)
+* [ズームする](zoom.md) ![Zoom Icon](tools/zoom-tool.png)
+* [領域を選択して変形する](selecting.md) ![Marquee Tool Icon](tools/marquee-tool.png)

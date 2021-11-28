@@ -1,18 +1,18 @@
-# Move Frames
+# フレームの移動
 
-Use the [timeline](timeline.md) to move frames:
+[タイムライン](timeline.md)でフレームを移動できます。
 
 ![Move Frames](move-frames/move-frames.gif)
 
-1. Select a range of frames you want to move.
-2. Put the mouse above the selection border.
-3. Start dragging the from selection border.
-4. Drop the frames where you want.
+1. 移動したいフレームの範囲を選択します。
+2. 選択範囲の境界線の上にマウスを持って行きます。
+3. 選択範囲の境界線をドラッグします。
+4. 好きな場所にフレームをドロップします。
 
 ---
 
 **SEE ALSO**
 
-[Copy Frames](copy-frames.md) |
-[Move Cels](move-cels.md) |
-[Timeline](timeline.md)
+[フレームをコピー](copy-frames.md) |
+[セルを移動](move-cels.md) |
+[タイムライン](timeline.md)

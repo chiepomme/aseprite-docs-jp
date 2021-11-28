@@ -1,41 +1,26 @@
-# Sprite structure
+# スプライトの構造
 
-In Aseprite a document/file/sprite has the following properties:
+Aseprite において、ドキュメント・ファイル・スプライトは以下のプロパティを持ちます。
 
-1. It has a [size](sprite-size.md) in pixels (width and height).
-1. It has a [color mode](color-mode.md), which tell you how many
-   colors the image can handle. All images in the sprite are in one
-   specific mode, you cannot mix RGB images with Indexed images in the
-   same sprite.
-1. A [color profile](color-profile.md) which tells
-   in what color space RGB values are.
-1. It contains a set of layers. You can see them in
-   the [Timeline](timeline.md). The most important concept here is
-   that there are two kind of layers:
-   the [background layer](layers.md#background-Layer) for opaque sprites, and
-   [transparent layers](layers.md#transparent-Layers).
-   A sprite can contain only one background layer, but several
-   transparent layers.
-1. It contains animation frames. Each frame has a duration, i.e. how many milliseconds
-   the frame must be on screen when the animation is being played.
-1. Each layer/frame intersection is called [cel](cel.md),
-   and contains the image where you finally can [paint](drawing.md).
+1. ピクセル単位での[サイズ](sprite-size.md)（幅と高さ。）
+1. [カラーモード](color-mode.md)。これはどれだけの色を画像内で使えるかを決定します。
+   スプライト内の画像は1つのモードに統一されている必要があり、同一スプライト内で RGB カラーとインデックスカラーを混ぜることはできません。
+1. [カラープロファイル](color-profile.md) RGB の値がどの色空間のものかを決定します。
+1. スプライトは複数のレイヤーを含みます。レイヤーは[タイムライン](timeline.md)で見ることができます。最も重要なことは、レイヤーには2つの種類があるということです。不透明なスプライトに使用する[背景レイヤー](layers.md#背景レイヤー)と、[透過レイヤー](layers.md#透過レイヤー)です。1つのスプライトは背景レイヤーは1つしか持てませんが、透過レイヤーは複数持つことができます。
+1. スプライトはアニメーションフレームを含み、それぞれのフレームは時間的な長さを持ちます。時間的な長さというのは、アニメーションが再生されるときに、そのフレームが何ミリ秒表示されるかということです。
+1. レイヤー1の1フレーム目のような、レイヤーとフレームの組み合わせを[セル](cel.md)と呼びます。
+   セルには画像を[描く](drawing.md)ことができます。
 
-The [timeline](timeline.md) show you the whole structure of the
-sprite like a grid. Rows are layers and columns are frames, each
-little cell of the matrix is a [cel](cel.md):
+[タイムライン](timeline.md)はスプライトの全体の構造をグリッドのように表示してくれます。横方向の行はレイヤーを、縦方向の列はフレームを表していて、それらが交わった小さい四角が[セル](cel.md)を表します。
 
-<img src="/docs/sprite/sprite-components.png" alt="Cels Matrix" class="xN" />
+<img src="sprite/sprite-components.png" alt="Cels Matrix" class="xN" />
 
-You can see some extra elements like [tags](tags.md) and [linked
-cels](linked-cels.md). These elements are useful to organize several
-animations of the same sprite, and to re-utilize frames along the
-animations (or different animations).
+ほかにも、[タグ](tags.md)や[結合セル](linked-cels.md)も表示されます。タグは1つのスプライトの中に複数のアニメーションを描くときに使われ、結合セルは同一アニメーション・異なるアニメーションを問わず、フレームを再利用したいときに使われます。
 
 ---
 
 **SEE ALSO**
 
-[Color Mode](color-mode.md) |
-[Save](save.md) |
-[Sprite size](sprite-size.md)
+[カラーモード](color-mode.md) |
+[保存](save.md) |
+[スプライトサイズ](sprite-size.md)

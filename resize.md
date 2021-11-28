@@ -1,5 +1,5 @@
-# Resize
+# サイズ変更
 
-You can resize your sprite using *Edit > Sprite Size* menu option.
+メニューの *スプライト > スプライトのサイズ* からサイズ変更することができます。
 
 ![Resize](resize/resize.gif)

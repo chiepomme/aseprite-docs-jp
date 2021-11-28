@@ -1,22 +1,19 @@
-# Layer Group
+# レイヤーグループ
 
-To better organize your sprite, you can group a set of layers in a little folder:
+スプライトを管理しやすくするために、レイヤーを小さなフォルダにまとめることができます。
 
 ![Layer Groups](layer-group/layer-groups.png)
 
-With groups you can show/hide (<kbd>Shift+X</kbd>) or lock/unlock
-several layers at the same time, or expand/collapse the folder
-in the [timeline](timeline.md) (<kbd>Shift+E</kbd>)
+グループごとにまとめて表示・非表示を切り替え（<kbd>Shift+X</kbd>）たり、ロックを切り替えたりできます。
+[タイムライン](timeline.md)でフォルダの開閉も可能です。（<kbd>Shift+E</kbd>）
 
-To create a new *Layer Group* you can use the *Layer > New > New
-Group* menu, or pressing <kbd>Alt+Shift+N</kbd> shortcut. If there is
-a [selected range of layers](range.md) in the [timeline](timeline.md),
-the new group will be created containing those selected layers
-automatically.
+新規レイヤーグループを作るには、メニューから *レイヤー > 新規 > 新規グループ* を選択するか、<kbd>Alt+Shift+N</kbd>キーを使用します。
+
+[タイムライン](timeline.md)で[範囲選択されたレイヤー](range.md)がある場合、新しいグループは選択されたレイヤーを自動で含みます。
 
 ---
 
 **SEE ALSO**
 
-[Layers](layers.md) |
-[Timeline](timeline.md)
+[レイヤー](layers.md) |
+[タイムライン](timeline.md)

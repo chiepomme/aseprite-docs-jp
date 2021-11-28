@@ -1,53 +1,43 @@
-# Sprite sheets
+# スプライトシート
 
-A sprite sheet is one big image with several frames of the same sprite
-on it. For example, you can save this animation:
+スプライトシートは、同じスプライトの複数のフレームが載った1枚の大きな画像です。たとえば、このアニメーションを保存するとしましょう。
 
 ![Running Guy](sprite-sheet/running-guy.gif)
 
-Like an horizontal sprite sheet:
+水平並びのスプライトシートはこのようになります。
 
 ![Horizontal Sprite Sheet](sprite-sheet/running-guy-horz.png)
 
-A vertical one:
+垂直並びのスプライトシートはこのように。
 
 ![Vertical Sprite Sheet](sprite-sheet/running-guy-vert.png)
 
-Or a matrix:
+マトリックス型のスプライトシートはこのように。
 
 ![Matrix Sprite Sheet](sprite-sheet/running-guy-matrix.png)
 
-In the following section you will know how to export and import this
-kind of images into Aseprite.
+以下の項目では、このようなスプライトシートをどうやってエクスポート・インポートするかを説明します。
 
-## Import
+## インポート
 
-To import a sprite sheet use *File > Import Sprite Sheet* option.
-Then you can select the file to import with an assigned offset `x`,
-`y` and sprite `width`, `height`.
+スプライトをインポートするには、メニューの *ファイル > スプライトシートのインポート* を使用します。ダイアログで、ファイルを選択し、`x` `y` のオフセットと、スプライトの `幅` と `高さ` を入力します。
 
 ![Import Sprite Sheet 01](sprite-sheet/running-guy-import-01.png)
 
-Padding is available if there are gapes between sprites,
-and the sheet type will affect the order of the sprites taken in.
+パディングはスプライト間にすきまがある場合に利用してください。また、タイプは、スプライトの順番に影響を与えます。
 
 ![Import Sprite Sheet 02](sprite-sheet/running-guy-import-02.png)
 
-## Export
+## エクスポート
 
-To export a sprite sheet use *File > Export Sprite Sheet* option.
-You can select all visible layers or a certain layer,
-and select the frames based on tags.
+スプライトシートをエクスポートするには、メニューの *ファイル > スプライトシートのエクスポート* を使用します。ダイアログでは、全てのレイヤーを出力するか、特定のレイヤーを出力するかを選べ、タグを利用してフレームも選択できます。
 
 ![Export Sprite Sheet](sprite-sheet/running-guy-export.png)
 
-## Automate from Command Line
+## コマンドラインインターフェースを使用した自動化
 
-(*Work-in-progress*)
+(*作成中*)
 
-## Texture Atlases
+## テクスチャアトラス
 
-A texture atlas is an huge image with all the graphics, sprites and
-images that a game will use. It's called "texture" because the image
-can be loaded into the video memory, to render graphics on screen with
-hardware acceleration.
+テクスチャアトラスは、ゲームで使用する全てのグラフィック、スプライト、画像を含んだ巨大な画像のことです。この画像は、ハードウェアアクセラレーションを利用してスクリーンに描画するためビデオメモリに読み込まれます。そのため「テクスチャ」と呼ばれます。

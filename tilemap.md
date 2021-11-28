@@ -1,48 +1,48 @@
-# Tilemap
+# タイルマップ
 
-Since **Aseprite v1.3** you can create *tilemaps* with *tilesets*.
+**Aseprite v1.3** から、*タイルマップ* と *タイルセット* を作成できるようになりました。
 
-What is a **tilemap**? A tilemap is a special kind of layer where each grid cell on the canvas is a reference to a tile (a little image) in its *tileset*. You can create a new tilemap from *Layer > New > New Tilemap Layer* or pressing <kbd>Space+N</kbd>.
+**タイルマップ** とは？タイルマップは特別なレイヤーで、キャンバス上のグリッドセルが、*タイルセット* 中のタイル（という小さな画像）を参照します。新しいタイルマップは、メニューの *レイヤー > 新規 > 新規タイルマップレイヤー* または、<kbd>スペース+N</kbd>キーで作成できます。
 
-What is a **tileset**? As its name says, it's a set of tiles, just like the color palette which is a set of colors. Each tile has an index and can be re-used in different position in the canvas on each tilemap grid cell.
+**タイルセット** とは？タイルセットは名前の通りタイルの集まりです。（まさにカラーパレットがカラーの集まりであるのと同じです。）それぞれのタイルはインデックスを持っていて、タイルマップの複数のグリッドセルから参照出来ます。
 
-Example:
+例：
 
 ![Tilemap Example](tilemap/tilemap-example.png)
 
-## Similarities with Indexed Color
+## インデックスカラーとの類似点
 
-We can compare a tilemap with an [indexed image](color-mode.md#indexed):
+タイルマップと[インデックスカラーの画像](color-mode.md#インデックスカラー)を比較してみましょう。
 
-| Tilemaps | Indexed Color
+| タイルマップ | インデックスカラー
 | -------- | -------------
-| **Tile**: One little image that can be reused in several places of a Tilemap Layer | **Palette entry**: One RGBA color that can be reused in several places of an Indexed Image.
-| **Tileset**: A collection of tiles of the same size. | **Palette**: A collection of RGBA colors (palette entries).
-| **Tilemap Layer**: A 2D image where each pixel is a “tile index” that references a tile in the tileset. Each tilemap has a specific tileset associated. | **Indexed Image**: A 2D image where each pixel references a palette entry with an index.
-| **Tile Index**: A value from 0 to N (where N=number of tiles in the tileset, and 0 is the *empty tile*) | **Palette Index**: A value from 0 to N-1 (where N=number of palette entries)
+| **タイル**：タイルマップレイヤーの複数の場所で利用出来る小さな画像 | **パレット内のカラー**：インデックスカラーの画像の複数の場所で利用できる 1つの RGBA カラー
+| **タイルセット**：同じサイズのタイルの集まり | **パレット**：RGBA カラーの集まり
+| **タイルマップレイヤー**：それぞれのピクセルがタイルセット内タイルのインデックスを持つ2次元画像。タイルマップは特定のタイルセットに関連付けされます。 | **インデックスカラーの画像**:それぞれのピクセルがパレット内のカラーのインデックスを持つ2次元画像。
+| **タイルインデックス**：0 から N の値を取る（N はタイルセット内のタイルの数で、0 は空のタイル） | **パレットインデックス**：0 から N-1 の値を取る（N はパレット内のカラーの数）
 
-## Modes
+## モード
 
-When you are in a Tilemap Layer, there are 2 main modes, you can switch between these modes pressing <kbd>Space+Tab</kbd>:
+タイルマップレイヤーを開いているときには、2つのモードがあります。これらのモードは <kbd>スペース+タブ</kbd>で切り替えられます。
 
-| Mode |   | Description
+| モード |   | 説明
 | ---- | - | -----------
-| *Draw Pixels* | ![](tilemap/pixels-mode.png) |  Draws pixels in each tile, i.e. modifies the tile content/pixels. This is like when you modify regular layers (you modify pixels). |
-| *Draw Tiles* | ![](tilemap/tiles-mode.png) | Puts/gets tiles directly (doesn't modifying tiles content, modifies the tilemap information) |
+| *ピクセルを描く* | ![](tilemap/pixels-mode.png) | それぞれのタイルにピクセルを描き込みます。これによりタイルの内容が変更されます。これは通常のレイヤーを書き換えるのと似ています。 |
+| *タイルを描く* | ![](tilemap/tiles-mode.png) | タイルを直接置いたり取得したりします。（タイルマップの情報を書き換えるだけで、タイルそのものの内容は変わりません） |
 
-When we draw pixels in a tilemap, we are modifying the content of each
-tile, but there are three special modes that indicate how we should
-handle these modifications between tiles:
+タイルマップにピクセルを描くとき、タイルの内容を書き換えますが、この書き換えがタイル間でどのように扱われるかの3つのオプションがあります。
 
-| Draw Pixels  |   | Description
+| ピクセルを描く  |   | 説明
 | ------------ | - | -----------
-| ![](tilemap/manual-mode.png) | *Manual* | It will modify each tile content, without re-ordering the tileset. Useful if you have already a fixed tileset and don’t want to change the position of each tile in the tileset. <kbd>Space+1</kbd>
-| ![](tilemap/auto-mode.png) | *Auto* | It tries to create new tiles (or reuse existing tiles) when you draw, and will erase unused tiles if they are not found in any tilemap referencing the tileset. It’s the default mode because it tries to simulate a regular layer adjusting the whole tileset automatically. <kbd>Space+2</kbd>
-| ![](tilemap/stack-mode.png) | *Stack* | It will create a new tile for each modification that is done in an existing tile, without modifying existing tiles, and stacking all the new ones. <kbd>Space+3</kbd>
+| ![](tilemap/manual-mode.png) | *マニュアル Manual* | タイルの内容を書き換えますが、タイルセットの並び替えは行いません。すでにタイルの位置が決まったタイルセットを使用していて、その位置を変えたくない場合に便利です。<kbd>スペース+1</kbd>
+| ![](tilemap/auto-mode.png) | *自動 Auto* | タイルの内容を書き換えたときに新しいタイルを作成しようとします。（できなければ既存のタイルを再利用します。）そして、どのタイルマップからも参照されていない場合にはそのタイルを削除します。これがデフォルトのモードになっています。通常のレイヤーをシミュレーションしようとして、タイルセット全体を自動で調節するからです。<kbd>スペース+2</kbd>
+| ![](tilemap/stack-mode.png) | *重ねる Stack* | 既存のタイルの書き換えが終わるごとに、そのタイルを直接書き換えずに新しいタイルを作成します。そして、新しいタイルを重ねます。<kbd>スペース+3</kbd>
+
+訳注：ここはまだうまく訳せていません。
 
 ---
 
 **SEE ALSO**
 
-[Color Mode](color-mode.md) |
-[Layers](layers.md)
+[カラーモード](color-mode.md) |
+[レイヤー](layers.md)

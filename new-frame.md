@@ -1,40 +1,30 @@
-# New Frame
+# 新規フレーム
 
-You can add frames using:
+フレームは以下の方法で追加できます：
 
-* *Frame > New Frame* (<kbd>Alt+N</kbd>): Creates a copy of the current frame in
-   the next position.
-* *Frame > New Empty Frame* (<kbd>Alt+B</kbd>): Creates a new empty frame. (All
-   [transparent layers](layers.md#transparent-layers) with an empty
-   cel, and the [Background layer](layers.md#background-layer) is
-   cleared with the active background color.)
-* *Frame > Duplicated Cels* (<kbd>Alt+D</kbd>): Copies the current cel, or
-   creates a copy of the current Timeline selection, into the next
-   position/frame.
-* *Frame > Duplicated Linked Cels* (<kbd>Alt+Shift+D</kbd> or <kbd>Alt+M</kbd>): Creates
-  links to the current cel (or the current Timeline selection) into
-  the next position/frame.
+* *フレーム > 新規フレーム* (<kbd>Alt+N</kbd>)：現在のフレームをコピーして新しいフレームを作成します。
+* *フレーム > 新規の空フレーム* (<kbd>Alt+B</kbd>)：新しい空のフレームを作成します。
+   （空のセルを持つ [透過レイヤー](layers.md#transparent-layers)と[背景レイヤー](layers.md#background-layer)はアクティブな背景色で塗りつぶされます。）
+* *フレーム > セルの複製* (<kbd>Alt+D</kbd>)：現在のセル、またはタイムラインの選択範囲をコピーして新しいフレームを作成します。
+* *フレーム > 結合セルの複製* (<kbd>Alt+Shift+D</kbd> または <kbd>Alt+M</kbd>)：
+  現在のセル（またはタイムラインの選択範囲）へのリンクをもつ新しいフレームを作成します。
 
-The little `+` in the status bar can be used to add new frames (it's like pressing <kbd>Alt+N</kbd>):
+ステータスバーにある小さな`+`でも新しいフレームを追加できます。（<kbd>Alt+N</kbd> と同様に動作します）：
 
 ![New Frame Button](new-frame/new-frame-button.png)
 
-## New Frame
+## 新規フレーム
 
 Using *View > New Frame* (<kbd>Alt+N</kbd> key) you can create a new frame that
 is an exact copy of the current one. For [continuous layers](continuous-layers.md)
 cels will be [linked](linked-cels.md)
 
-## New Empty Frame
+## 新規の空フレーム
 
-When a new empty frame is added with <kbd>Alt+B</kbd>, all
-[transparent layers](layers.md#transparent-layers) will not
-contain cels, and the [background layer](layers.md#background-layer)
-will be cleared with the [background color](color-bar.md#background-color).
+新規の空フレームを<kbd>Alt+B</kbd>で作成した場合、全てのセルを持たない[透過レイヤー](layers.md#transparent-layers)と[背景レイヤー](layers.md#background-layer)は[背景色]](color-bar.md#background-color)でクリアされます。
 
-Empty frames are also created when you [move](move-cels.md) or
-[copy cels](copy-cels.md) beyond the end of the animation.
+空フレームは、アニメーションの終わりを超えた[セルの移動](move-cels.md)、もしくは、[セルのコピー](copy-cels.md)でも作られます。
 
-## Duplicated Cels
+## セルの複製
 
-Some information: https://community.aseprite.org/t/913
+追加情報: https://community.aseprite.org/t/913

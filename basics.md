@@ -1,90 +1,54 @@
-# Basics
+# Aseprite の基本
 
-Here you can learn the basics principles behind Aseprite.
+ここでは Aseprite の裏にある基本的な原理を説明します。
 
-In Aseprite, a [sprite](sprite.md) consists of a sequence of frames
-and a stack of layers. The intersection of frames and layers creates
-an array of editable graphic [cels](cel.md) with images/pixels that
-can be [edited](drawing.md) with the [sprite editor](sprite-editor.md). Layers, frames,
-and cels are visible in the [timeline](timeline.md):
+Aseprite では、1つの[スプライト](sprite.md)は、時間軸に沿ったフレームと、上下に重なり合ったレイヤーで構成されています。フレームとレイヤーが組み合わさると、[スプライトエディタ](sprite-editor.md)で[編集](drawing.md)可能なグラフィックである[セル](cel.md)が作られます。レイヤー、フレーム、セルは[タイムライン](timeline.md)上で見ることができます。
 
 ![Timeline Overview](sprite/sprite-components.png)
 
-## Basic Elements of a Sprite
+## スプライトの基本的な構成要素
 
-A frame is a single still image in a sprite. Adding and altering
-frames creates a sequence of images called an
-[animation](animation.md). The details of how Aseprite cycles through
-frames is described in greater detail in the [animation
-section](animation.md). Frames are represented horizontally in the
-timeline, from left to right.
+フレームはスプライト内の1枚の動かない画像のことです。フレームを追加しながら書き換えていくと、[アニメーション](animation.md)という、時系列に沿った画像の集まりになります。
 
-Each frame's image is produced from a stack of one or more
-[layers](layers.md), represented in order from bottom to top on the
-timeline. Layers at the bottom of the timeline are drawn first, and every
-subsequent layer is added over top of it. Layers assist you by divide
-a single complex image into separate graphic component parts.
+Aseprite がどのようにフレームの集まりを再生するかということについては、[アニメーションの項目](animation.md)で詳細に説明しています。フレームの流れはタイムライン上では左から右の横方向に表現されます。
 
-Each frame-layer intersection is called a [cel](cel.md). The contents
-of any specific cel may be moved, edited, and deleted without
-effecting the contents of other cels, which make them ideal for
-isolating and editing specific elements of a graphic while preserving
-parts that do not change.
+それぞれのフレーム画像は1枚以上の[レイヤー](layers.md)から成り立ちます。レイヤーはタイムラインの下から順番に表示されます。タイムラインで一番下のレイヤーが最初に描画され、そこから順番に重ねられていきます。レイヤーは複雑な1枚の絵を、構成要素ごとに分割して扱いやすくしてくれます。
 
-## Workflow
+横方向のフレームと縦方向のレイヤーの交わった部分を[セル](cel.md)と言います。セルの内容を動かしたり、編集したり、削除したりしても、ほかのセルに影響を与えません。そのため、ほかの部分を変更しないように要素を独立させて編集するのに向いています。
 
-The basic [workflow](workflow.md) is:
+## ワークフロー
 
-* [Create a new sprite](new-sprite.md) from *File > New* menu.
-* [Draw](drawing.md) with pencil tool ![Pencil Tool Icon](tools/pencil-tool.png) using
-  <kbd>Left click</kbd> or <kbd>Right click</kbd>, and pick colors from the
-  [color bar](color-bar.md) using those same buttons.
-* [Save your work](save.md) from *File > Save* menu as an
-  `.ase` file to preserve all your image information (layers, frames,
-  etc.. Also stores certain [workspace](workspace.md) preferences.).
-* [Export your sprite](exporting.md) as a `.gif` file to publish your image on a
-  website, as a numbered sequence of individual `.png` files (one file per frame), or as a single `.png` file with all frames arranged in a single row or column, or as a 2-D [sprite sheet](sprite-sheet.md).
+基本的な[ワークフロー](workflow.md)は以下の通りです。
 
- You may choose from any of several other file formats during _Save As_ and _Export _as well, depending on your colour depth choices and personal preferences!)
+* [新しいスプライトを作成する](new-sprite.md)：メニューの *ファイル > 新規* から作成します。
+* [描く](drawing.md)：ペンツール![Pencil Tool Icon](tools/pencil-tool.png)を使って <kbd>左クリック</kbd> <kbd>右クリック</kbd> で描きます。[カラーバー](color-bar.md)で同じマウスのボタンを使って色を選択します。
+* [保存する](save.md)：メニューの *ファイル > 上書き保存* を使用して、`.ase` ファイルとして保存することで、全ての画像情報（レイヤー、フレームなど）を保持できます。また、一部の[ワークスペース](workspace.md)の設定も保存されます。
+* [スプライトをエクスポートする](exporting.md)：`.gif` ファイルとしてウェブページ向けにエクスポートしたり、フレームごとの `.png` ファイルとしてエクスポートしたり、すべてのフレームが1列に並んだ1つの `.png` ファイルとしてエクスポートしたり、[スプライトシート](sprite-sheet.md)としてエクスポートしたりできます。
 
-See the [workspace](workspace.md) to know more about the elements
-in the window. See [workflow](workflow.md) section for more details.
+_名前を付けて保存_ や _エクスポート_ をする時に、ほかのファイル形式を選ぶこともできます。このあたりは色深度の選択や好みに因るところです。
 
-## A hand on the keyboard
+もっと画面の構成要素を知るためには[ワークスペース](workspace.md)を見てください。また、より詳細なワークフローについては[ワークフロー](workflow.md)を見てください。
 
-You should put your left hand on the keyboard *(or your right hand if
-you are left-handed)*. As there are some handy keyboard shortcuts, you
-can use them from the very beginning to make a better use of Aseprite:
+## キーボードに手を置く
 
-* Keys <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>, <kbd>4</kbd>,
-  <kbd>5</kbd>, and <kbd>6</kbd> can be used to change the
-  [zoom](zoom.md) (you can use the Mouse Wheel to change zoom too).
-* <kbd>B</kbd> key is the Pencil tool, and <kbd>M</kbd> the rectangular marquee, maybe the
-  most common tools that you will use.
-* <kbd>Alt+click</kbd> allows you to pick colours from the active image
-  using the Eyedropper tool ![Eyedropper Tool Icon](tools/eyedropper-tool.png):
-  <kbd>Alt+Left click</kbd> samples the Foreground Color,
-  <kbd>Alt+Right click</kbd> samples the Background Color.
-* The <kbd>Ctrl</kbd> key (or <kbd>⌘</kbd> on macOS) can be used to
-  select the [Move tool](move-tool.md) ![Move Tool Icon](tools/move-tool.png).
-  With it you can easily select or move layers.
-* The <kbd>Tab</kbd> key hides and reveals the
-  [timeline](timeline.md). If your timeline is ever missing, this is
-  the fastest way to reveal it!
+左手（左利きであれば右手）をキーボードに置くのをおすすめします。最初から便利なキーボードショートカットを使うことで、Aseprite をよりうまく使うことができるでしょう。
 
-* Holding <kbd>Spacebar</kbd> as you <kbd>Left click+Drag</kbd> will
-  pan your view of the sprite you are currently editing. Useful when
-  you're working on large graphics or are zoomed-in.
+* テンキーではない <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> <kbd>5</kbd> <kbd>6</kbd> キーで[ズーム](zoom.md)できます。（マウスホイールでもズームが可能です。）
+* <kbd>B</kbd> キーはペンツール、<kbd>M</kbd> キーは矩形選択です。これらは一番良く使うツールです。
+* <kbd>Alt+クリック</kbd> はスポイトツール![Eyedropper Tool Icon](tools/eyedropper-tool.png) で色を取得出来ます。<kbd>Alt+左クリック</kbd>では前景色を、<kbd>Alt+右クリック</kbd>では背景色を取得出来ます。
+* <kbd>Ctrl</kbd>キー（または macOS では<kbd>⌘</kbd>）を押すと[移動ツール](move-tool.md)![Move Tool Icon](tools/move-tool.png) を使用できます。移動ツールはレイヤーを簡単に選択または移動できます。
+* <kbd>Tab</kbd>キーは[タイムライン](timeline.md)の表示非表示を切り替えます。タイムラインが見つからないときには、この方法が一番早く再表示できます。
+* <kbd>スペース</kbd>キーを押しながら<kbd>左ドラッグ</kbd>すると、編集中のスプライトの画面をスクロールすることができます。大きな画像を編集していたり、ズームしているときに便利です。
 
-## Alternative functions for right-click
+## 右クリックを別の機能に割り当てる
 
-By default, <kbd>Right click</kbd> paints with the [Background Color](color-bar.md#background-color),
-but you can change this configuration from [*Edit > Preferences > Editor*](right-click.md).
+デフォルトでは、<kbd>右クリック</kbd>は[背景色](color-bar.md#背景色)で描く機能が割り当たっています。
+この設定はメニューの [*編集 > 環境設定 > エディター*](right-click.md) から変更できます。
 
 ---
 
 **SEE ALSO**
 
-[Workspace](workspace.md) |
-[Workflow](workflow.md) |
-[Sprite](sprite.md)
+[ワークスペース](workspace.md) |
+[ワークフロー](workflow.md) |
+[スプライト](sprite.md)

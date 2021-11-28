@@ -1,56 +1,47 @@
-# Troubleshooting
+# トラブルシューティング
 
-If you have a problem starting Aseprite (e.g. it starts and closes
-inmediately), you can try:
+Aseprite を起動するのに問題がある場合（たとえば、起動するがすぐに落ちてしまう場合）以下の手順を試してください。
 
-1. [Reset your preferences](reset-preferences.md)
-1. Use the [debug option](debug.md), this generates a `Aseprite-v1.2-DebugOutput.txt` file
-1. Windows only: Check if the last line of the generated
-   `Aseprite-v1.2-DebugOutput.txt` file says:
-   `PEN: Wintab library loaded`. If that is the case, try [disabling Wintab](wintab.md).
-1. In other case, contact us at
-   [support@aseprite.org](mailto:support@aseprite.org) with the
-   `Aseprite-v1.2-DebugOutput.txt` file.
+1. [環境設定をリセットする](reset-preferences.md)
+1. [デバッグオプション](debug.md)を使用すると、`Aseprite-v1.2-DebugOutput.txt` というファイルが生成されます。
+1. Windows のみ：`Aseprite-v1.2-DebugOutput.txt` ファイルの最後の行が、`PEN: Wintab library loaded` になっていないか確認してください。この場合、[Wintab を無効](wintab.md)にしてみてください。
+1. それでも解決しない場合は、[support@aseprite.org](mailto:support@aseprite.org) まで、`Aseprite-v1.2-DebugOutput.txt` ファイルを送ってください。
 
-You might also try to find your problem on:
+または、同じ問題を以下の場所で探してみてください。
 
 * [Aseprite Community](https://community.aseprite.org)
 * [Steam General Discussion forum](http://steamcommunity.com/app/431730/discussions/0/)
 * [Steam Bug Reports forum](http://steamcommunity.com/app/431730/discussions/2/)
 * [Closed bugs on the GitHub](https://github.com/aseprite/aseprite/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aclosed%20%20label%3Abug)
 
-## Crash/Data Lost
+## クラッシュ・データ紛失
 
-In case of crash, you might be able to [recover some sprites](data-recovery.md).
+クラッシュした場合は、[スプライトを復元](data-recovery.md)できる可能性があります。
 
-## Tablet Problems
+## タブレットの問題
 
-In case your tablet doesn't work, please check the [tablet](tablet.md) page.
+タブレットが動かない場合、[タブレット](tablet.md) ページを見てください。
 
-## macOS Rendering Problems
+## macOS の描画の問題
 
-Aseprite uses an asynchronous rendering
-on macOS ([CALayer's drawsAsynchronously](https://developer.apple.com/documentation/quartzcore/calayer/1410974-drawsasynchronously?language=objc)).
-Since Aseprite v1.2.20 you can disable this in case that you have some
-problems e.g. black rectangles in the screen (anyway the performance
-will drop significantly if you are using
-a [color profile](color-profile.md) like Display P3).
+Aseprite は macOS の非同期レンダリング([CALayer's drawsAsynchronously](https://developer.apple.com/documentation/quartzcore/calayer/1410974-drawsasynchronously?language=objc))を使用しています。 Aseprite v1.2.20 からは、この機能を無効にすることができます。例えば、黒い長方形が画面に表示されるなどの問題が出た場合にお試しください。（いずれにせよ、Display P3 などの[カラープロファイル](color-profile.md)を使用する場合は、パフォーマンスが大きく落ちます。）
 
-To disable this:
-1. Close Aseprite
-2. Open `aseprite.ini` file in the [preferences folder](preferences-folder.md)
-3. Search the `[general]` section and add this option `osx_async_view = false`
+これを無効化するには以下の手順を行ってください。
+
+1. Aseprite を閉じる
+2. [環境設定フォルダ](preferences-folder.md)の `aseprite.ini` ファイルを開きます。
+3. `[general]` と言う項目を検索して、`osx_async_view = false` というオプションを追加します。
 ```
 [general]
 osx_async_view = false
 ```
-4. Save the file and start Aseprite
+4. ファイルを保存して Aseprite を再度起動してください。
 
 ---
 
 **SEE ALSO**
 
-[Reset Preferences](reset-preferences.md) |
-[Data Recovery](data-recovery.md) |
-[Debug](debug.md) |
-[Tablet](tablet.md)
+[環境設定をリセット](reset-preferences.md) |
+[データ復元](data-recovery.md) |
+[デバッグ](debug.md) |
+[タブレット](tablet.md)

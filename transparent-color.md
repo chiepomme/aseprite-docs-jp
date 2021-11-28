@@ -1,25 +1,18 @@
-# Transparent Color
+# 透明色
 
-In [RGB](color-mode.md#rgb) and [Grayscale](color-mode.md#grayscale)
-sprites, transparent pixels are colors with `Alpha=0`, but in
-[Indexed](color-mode.md#indexed) color mode, there exist one specific
-and special index in the palette that will represent the transparent
-color for [transparent layers](layers.md#transparent-layers):
+スプライトが [RGB カラー](color-mode.md#rgb)または[グレースケール](color-mode.md#grayscale)の場合、透明なピクセルは `アルファ=0` になっています。一方で、[インデックスカラー](color-mode.md#indexed)の場合には、[透過レイヤー](layers.md#transparent-layers)での透明を表す色は、パレット内の特別なインデックスを持った色になります。
 
 ![Transparent Color](transparent-color/transparent-color-property.png)
 
-This means that pixels that refer to this specific index in the layer
-will not be visible (and only the background layer can show the
-"transparent color" as a solid color).
-
-You can change the transparent color using middle mouse button in the
-[color bar](color-bar.md), or
-going to [*Sprite > Properties*](sprite-properties.md) menu option.
+この特別なインデックスを持ったピクセルは、透過レイヤーでは透明になり見えません。
+（背景レイヤーでは、この「透明と定義された色」を通常の色として表示することができます。）
+ 
+この透明色は、[カラーバー](color-bar.md)でマウスのホイールクリックをするか、メニューの [*スプライト > プロパティ*](sprite-properties.md)で変更が出来ます。
 
 ---
 
 **SEE ALSO**
 
-[Color](color.md) |
-[Color Mode](color-mode.md) |
-[Sprite Properties](sprite-properties.md)
+[色](color.md) |
+[カラーモード](color-mode.md) |
+[スプライトのプロパティ](sprite-properties.md)

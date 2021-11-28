@@ -1,60 +1,42 @@
-# Exporting
+# エクスポート
 
-Generally you will use the *File > Save* to save your work with full
-information as a `.ase` or `.aseprite` file
-([both are the same](/faq/#is-there-any-difference-between-ase-and-aseprite-files)). Then
-you can export your sprite for your own game, website, application,
-etc. using the *File > Export* menu option to convert your sprite into
-a `.gif` file or a sequence of `.png` files.
+通常は *ファイル > 上書き保存* 使用して、スプライトとすべての情報を `.ase` または `.aseprite` ファイルに保存します。（[なお、両者は同じものです。](https://www.aseprite.org/faq/#is-there-any-difference-between-ase-and-aseprite-files)）また、メニューの *ファイル > エクスポート* を使用すると、ゲームやウェブサイトやアプリケーションなどのために、`.gif` ファイルや連番の `.png` ファイルとしてスプライトをエクスポートできます。
 
-*File > Export* will remember the latest options you've used in case
-that you want to save the copy again.
+*ファイル > エクスポート* は、あとでもう一度保存する時に再度設定をしなくてすむよう、前回の設定項目を記憶します。
 
-## Export as a sequence of images
+## 連番画像としてエクスポート
 
-You can save the whole animation as a sequence specifying a file name
-with a number and a file type for static images. E.g. `frame1.png`
-where `1` specifies the number of the first frame, and `.png` the
-static file type used to save each frame. See how to
-[load a sequence of images](open.md#loading-image-sequences).
+アニメーション全体を、連番のついたファイル名と静止画像のファイル形式を使用して保存します。
+たとえば、`frame1.png` のうち、`1`は連番で最初のフレームを表し、`.png` はそれぞれのフレームを保存するための静止画像のファイル形式を表します。[連番画像の読み込み方](open.md#連番画像の読み込み)も見てください。
 
-If you specify other file name like `frame001.png` file names will be
-like `frame001.png`, `frame002.png`, `frame003.png`, etc.
+もし、`frame001.png` のようなファイル名を指定した場合、ファイル名は `frame001.png`、`frame002.png`、 `frame003.png` のようになります。
 
-## Export Just One Frame
+## 1フレームだけを書き出す
 
-From *File > Export* you can export one frame (or one layer, or a set of selected frames, etc.)
-changing *Frames* field to *Selected frames*:
+*ファイル > エクスポート* で1フレームだけ（または、1レイヤーだけ、選択したフレームだけなど）を書き出すことができます。*フレーム* を *Selected frames* にしてください。
 
 ![File > Export > Selected Frame](exporting/file-export-sel-frame.png)
 
-## Automatic Resize on Export
+## エクスポート時に自動でサイズ変更する
 
-The *File > Export* dialog contains a special *Resize* field so you
-can save your copy with other scale. E.g. It's useful to upload your
-animation for social networks (like Twitter), that needs higher scales
-(e.g. 400% of your original sprite size):
+*ファイル > エクスポート* ダイアログにはサイズ倍率を変更して保存するための *サイズ変更* という項目があります。たとえば、Twitter のような SNS にアニメーションをアップするときなど、大きな倍率で書き出したいときに便利です。
 
 ![File > Export > Resize](exporting/file-export-resize.png)
 
-## Other Export Options
+## その他のエクスポートのオプション
 
-There are other useful options in *File > Export*:
+*ファイル > エクスポート* にはほかにも便利なオプションがあります。
 
 ![File > Export menu option](exporting/file-export.png)
 
-* *Animation Direction*: You can export your animation in Forward,
-  Backward, or Ping-Pong mode.
-* *Apply pixel ratio*: In case your sprite has a special pixel aspect
-  ratio (like 2:1), checking this option will export the sprite
-  applying the pixel aspect ratio to the final result.
-* *Export for Twitter*: Adjusts the animation to avoid some problems
-  on Twitter reproducing the last frame with an invalid delay.
+* *アニメーションの方向*：アニメーションの再生方向を、通常、反転、ピンポン（通常＋反転）でエクスポートできます。
+* *ピクセル比率を適用する*：スプライトが特別なピクセルアスペクト比（たとえば 2:1 など）を持っている場合、この項目にチェックをいれると、このピクセルアスペクト比を最終結果に適用します。
+* *Twitter用にエクスポート*：Twitter で最後のフレームがおかしな遅延で再生される問題を回避するための調節を行います。
 
 ---
 
 **SEE ALSO**
 
-[Save](save.md) |
-[Sprite sheets](sprite-sheet.md) |
-[Command Line Interface](cli.md)
+[保存](save.md) |
+[スプライトシート](sprite-sheet.md) |
+[コマンドラインインターフェース](cli.md)

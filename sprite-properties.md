@@ -1,35 +1,26 @@
-# Sprite Properties
+# スプライトのプロパティ
 
-You can change some sprite properties from *Sprite > Properties* menu (<kbd>Ctrl+P</kbd> or <kbd>⌘P</kbd>):
+メニューの *スプライト > プロパティ* （<kbd>Ctrl+P</kbd>または<kbd>⌘P</kbd>）からスプライトのプロパティを変更できます。
 
 ![Sprite Properties dialog](sprite-properties/sprite-properties.png)
 
-You can:
+スプライトのプロパティのダイアログでは以下のことができます。
 
-* Change [transparent color](transparent-color.md) (for [indexed color mode](color-mode.md#indexed))
-* Change pixel aspect ratio
-* Assign or convert the color profile [color profile](color-profile.md)
+* [透明色](transparent-color.md) を変更できます。（[インデックスカラーモード](color-mode.md#インデックスカラー)用です。）
+* ピクセルのアスペクト比を変更できます。
+* [カラープロファイル](color-profile.md)の割り当てと変換ができます。
 
-## Color Profile
+## カラープロファイル
 
-In the *Sprite Properties* dialog you have two buttons: one to **Assign** other
-color profile, and other to **Convert** to other color profile:
+*スプライトのプロパティ* ダイアログには2つのボタンがあります。他のカラープロファイルの **割り当て** ボタンと、他のカラープロファイルへ **変換** ボタンです。
 
-* If you **Assign** a new color profile to the sprite, pixel values
-  will not be modified, just the new color profile is assigned to the
-  sprite. You will notice that colors will change in the picture
-  because now RGB values are the same, but the [color space](color-profile.md)
-  has changed. E.g. so now, the "pure red" value (255, 0, 0), might be
-  different that the previous "pure red").
-* If you **Convert** the color profile, pixel values will be converted
-  from one color space to the other color space, so colors should not
-  be visually different, but each RGB value will be adjusted to the
-  new color space (so almost all pixel values will be modified).
+* **割り当て**：新しいカラープロファイルを割り当てると、ピクセルの値を変えずに単純に新しいカラープロファイルをスプライトに割り当てます。RGB の値を維持したまま[色空間](color-profile.md)が変わるため、画像の見た目の色が変わる場合があります。たとえば、完全な赤 (255, 0, 0) は割り当て前の完全な赤とは見え方が違うかもしれません。
+* **変換** カラープロファイルを変換すると、ピクセルの値を元の色空間のものから新しい色空間のものに変換します。そのため、見た目上の色はほぼ変わりませんが、それぞれの RGB の値は新しい色空間に合うように調節されたものになります。（つまり、ほぼ全てのピクセルの値が変更されます。）
 
 ---
 
 **SEE ALSO**
 
-[New Sprite](new-sprite.md) |
-[Color Profile](color-profile.md) |
-[Transparent Color](transparent-color.md)
+[新規スプライト](new-sprite.md) |
+[カラープロファイル](color-profile.md) |
+[透明色](transparent-color.md)

@@ -1,38 +1,38 @@
-# Drawing
+# 描く
 
-You can draw in the [sprite editor](sprite-editor.md) using tools
-like the Pencil ![Pencil tool icon](tools/pencil-tool.png)
-(<kbd>B</kbd> key), you can use <kbd>Left click</kbd> to paint with the
-[Foreground color](color-bar.md), or <kbd>Right click</kbd> to paint with the
-Background color. This is true for almost all painting tools.
+[スプライトエディタ](sprite-editor.md)ではペン![Pencil tool icon](tools/pencil-tool.png)
+(<kbd>B</kbd> キー)のようなツールを使って描くことができます。
+<kbd>左クリック</kbd>で[前景色(Foreground color)](color-bar.md)で塗ることができ、
+<kbd>右クリック</kbd>では背景色(Background color)で塗ることが出来ます。
+これはほぼ全てのペイント用ツールに共通です。
 
-The tool behavior is also modified by the [active ink](ink.md).
+この動作は[アクティブなインク](ink.md)などによって変わります。
 
-The following is the list of available painting tools:
+以下は使用できるペイント用ツールの一覧です：
 
-* ![Pencil tool icon](tools/pencil-tool.png) Pencil (<kbd>B</kbd> key)
-* ![Line tool icon](tools/line-tool.png) Line (<kbd>L</kbd> key)
-* ![Curve tool icon](tools/curve-tool.png) Curve (<kbd>Shift+L</kbd> key)
-* ![Rectangle tool icon](tools/rectangle-tool.png) Rectangle (<kbd>U</kbd> key)
-* ![Ellipse tool icon](tools/ellipse-tool.png) Ellipse (<kbd>Shift+U</kbd> key)
-* ![Countour tool icon](tools/countour-tool.png) Countour (<kbd>D</kbd> key)
-* ![Polygon tool icon](tools/polygon-tool.png) Polygon (<kbd>Shift+D</kbd> key)
+* ![Pencil tool icon](tools/pencil-tool.png) ペン (<kbd>B</kbd> キー)
+* ![Line tool icon](tools/line-tool.png) 直線 (<kbd>L</kbd> キー)
+* ![Curve tool icon](tools/curve-tool.png) 曲線 (<kbd>Shift+L</kbd> キー)
+* ![Rectangle tool icon](tools/rectangle-tool.png) 長方形 (<kbd>U</kbd> キー)
+* ![Ellipse tool icon](tools/ellipse-tool.png) 楕円 (<kbd>Shift+U</kbd> キー)
+* ![Countour tool icon](tools/countour-tool.png) 輪郭 (<kbd>D</kbd> キー)
+* ![Polygon tool icon](tools/polygon-tool.png) 多角形 (<kbd>Shift+D</kbd> キー)
 
-Other tools that will help you in the drawing process:
+ほかのツールは絵を描くときの補助をしてくれます：
 
-* ![Eraser tool icon](tools/eraser-tool.png) [Eraser](eraser.md) (<kbd>E</kbd> key)
-* ![Eyedropper tool icon](tools/eyedropper-tool.png) [Eyedropper](eyedropper.md) (<kbd>Alt</kbd> or <kbd>I</kbd> key)
-* ![Selection tool icon](tools/marquee-tool.png) [Rectangular Marquee](selecting.md) (<kbd>M</kbd> key)
-* ![Move tool icon](tools/move-tool.png) [Move Cel](move-tool.md) (<kbd>Ctrl</kbd> or <kbd>⌘</kbd> or <kbd>V</kbd> key)
-* ![Slice tool icon](tools/slice-tool.png) [Slice](slices.md) (<kbd>Shift+C</kbd> key)
+* ![Eraser tool icon](tools/eraser-tool.png) [消しゴム](eraser.md) (<kbd>E</kbd> key)
+* ![Eyedropper tool icon](tools/eyedropper-tool.png) [スポイト](eyedropper.md) (<kbd>Alt</kbd> or <kbd>I</kbd> キー)
+* ![Selection tool icon](tools/marquee-tool.png) [矩形選択](selecting.md) (<kbd>M</kbd> キー)
+* ![Move tool icon](tools/move-tool.png) [移動](move-tool.md) (<kbd>Ctrl</kbd> or <kbd>⌘</kbd> or <kbd>V</kbd> キー)
+* ![Slice tool icon](tools/slice-tool.png) [スライス](slices.md) (<kbd>Shift+C</kbd> キー)
 
 
 ---
 
 **SEE ALSO**
 
-[Sprite Editor](sprite-editor.md) |
-[Ink](ink.md) |
-[Tool Bar](tool-bar.md) |
-[Move Tool](move-tool.md) |
-[Zoom Tool](zoom.md)
+[スプライトエディタ](sprite-editor.md) |
+[インク](ink.md) |
+[ツールバー](tool-bar.md) |
+[移動ツール](move-tool.md) |
+[ズームツール](zoom.md)

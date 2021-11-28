@@ -1,27 +1,18 @@
-# Tablet
+# タブレット
 
-Since Windows 8, Microsoft introduced a new API to use your tablet
-with Windows program: the pointer API. Since Aseprite v1.2.19.1 you
-can configure what API do you prefer to use:
+Windows 8 からマイクロソフトは、ポインター API という、Window アプリケーションからタブレットを使用するための新しい API の提供を始めました。Aseprite v1.2.19.1 からは、どの API を使用するか選ぶことができます。
 
 ![Tablet section](tablet/tablet.png)
 
-* *Windows 8/10 Pointer API*: This option might be enough for most
-  modern devices, you can give a try how your tablet works with this
-  (might work better with this option than with Wintab)
-* *[Wintab](wintab.md)*: This is the default option at the moment to
-  support pressure sensitivity on older systems (Windows Vista/7) and
-  older devices.
-* *Wintab (direct packet processing)*: This option might not work well
-  in some devices, but might be useful in other devices to avoid
-  losing packets and getting smoother strokes.
+* *Windows 8/10 ポインター API*：ほとんどの最新デバイスではこのオプションで問題無いはずです。この設定であなたのタブレットがどのように動作するかを見てみるのもよいでしょう。（Wintab よりもうまく動作する可能性があります）
+* *[Wintab](wintab.md)*：Windows Vista/7 のような古いシステムや古いデバイスをサポートするために、現時点のデフォルトはこのオプションとなっています。
+* *Wintab（直接パケット処理）*：このオプションは一部のデバイスではうまく動作しないかもしれません。しかし他のデバイスにおいては、パケットロスを防いでなめらかな書き味を得られる可能性があります。
 
-Pressing the *OK*/*Apply* buttons will change the tablet settings
-immediately, there is no need to restart the program.
+*OK*/*適用* ボタンを押すとすぐに設定が変更されます。プログラムを再起動する必要はありません。
 
 ---
 
 **SEE ALSO**
 
 [Wintab](wintab.md) |
-[Troubleshooting](troubleshooting.md)
+[トラブルシューティング](troubleshooting.md)

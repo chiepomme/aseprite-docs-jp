@@ -1,52 +1,42 @@
-# Color bar
+# カラーバー
 
-The color bar shows the palette for the active sprite:
+カラーバーはアクティブなスプライトのパレットを表示します:
 
 ![Color bar](color-bar/color-bar.png)
 
-Each color can be identified by its index, starting from 0 to 255.
+それぞれの色は 0~255 のインデックスで識別されます。
 
-With <kbd>Left click</kbd> you can select the foreground color, and with <kbd>Right click</kbd>
-the background color. With the <kbd>X</kbd> key you can swap these colors.
+<kbd>左クリック</kbd>で前景色を選ぶことができ、<kbd>右クリック</kbd>で背景色を選ぶことができます。また、<kbd>X</kbd>キーでこれらの色を切り替えることができます。
 
-Depending on the active sprite [color mode](color-mode.md):
+アクティブなスプライトの[カラーモード](color-mode.md)に依存します：
 
-* On Indexed images, the color bar shows all the available colors to
-  be used in the sprite. You cannot use colors that are not present in
-  the palette, the only way is modifying the palette itself pressing
-  the `Edit Palette` button or <kbd>F4</kbd> key.
+* インデックスカラーモードでは、カラーバーはスプライト内で使用可能な全ての色を表示します。パレットにない色は使用することができません。パレットを変更するためには、`Edit Color(Palette)` ボタンもしくは、<kbd>F4</kbd>キーを押す必要があります。
 
-* On RGB images the color bar shows a palette of colors to pick from,
-  but the sprite doesn't depend on the palette, you can modify it and
-  the sprite will look the same. Even more, you are able to use colors
-  inside the sprite that aren't present in the palette.
+* RGB カラーモードでは、カラーバーは色を選択できるカラーパレットを表示しますが、スプライトはこのパレットに制限されません。パレットの色を変更することができ、そうしてもスプライトの色は変わりません。さらに、パレットにない色を使うこともできます。
 
-## Foreground Color
+## 前景色
 
-Color used to draw with the <kbd>Left click</kbd>. If you click the button you
-will see a popup window to select colors using
-[RGB](http://en.wikipedia.org/wiki/RGB_color_model) or
-[HSB](http://en.wikipedia.org/wiki/HSL_and_HSV) sliders:
+<kbd>左クリック</kbd>で描くときに使われる色です。前景色ボタンを押すと、色を選択するポップアップが出てきます。色を選ぶときには [RGB](http://en.wikipedia.org/wiki/RGB_color_model) や [HSB](http://en.wikipedia.org/wiki/HSL_and_HSV) のスライダーを使用できます：
 
 ![Color Popup](color-bar/color-popup.png)
 
-The little warning icon ![warning icon](color-bar/color-warning-icon.png) can be
-pressed to add the color to the palette if it's not present:
+選んだ色がパレットに存在しない場合、小さな警告アイコン ![warning icon](color-bar/color-warning-icon.png)を押すと、色をパレットに追加できます：
 
 ![Color Warning](color-bar/color-warning.png)
 
-## Background Color
 
-Color used to draw with the <kbd>Right click</kbd>.
+## 背景色
 
-Also this color is used to clear the `Background` layer in several situations:
+<kbd>右クリック</kbd>で描くときに使われる色です。
 
-* When the selection is cleared (*Edit > Clear* menu), or
-* When a new empty frame is added (*Frame > New Empty Frame* menu)
-* When a transparent layer is converted to Background (*Layer > Background from Layer* menu)
+背景色は`背景`レイヤーをクリアする場面でも使用されます:
+
+* 選択範囲をクリアしたとき（メニューの*編集 > 削除*）
+* 空の新規フレームを追加したとき（メニューの*フレーム > 空の新規フレーム*）
+* 透過レイヤーを背景に変換したとき（メニューの*レイヤー > Background from Layer*）
 
 ---
 
 **SEE ALSO**
 
-[Color](color.md)
+[カラー](color.md)

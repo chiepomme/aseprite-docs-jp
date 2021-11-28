@@ -1,44 +1,37 @@
-# Timeline
+# タイムライン
 
-This is the timeline:
+これがタイムラインです。
 
-<img src="/docs/timeline/timeline.png" alt="Timeline" class="xN" />
+<img src="timeline/timeline.png" alt="Timeline" class="xN" />
 
-It shows the [layers](layers.md) and frames of the active sprite. You can use the
-*View > Timeline* menu option or press the <kbd>Tab</kbd> key to show or hide
-it. It also appears automatically when you create a [new Frame](new-frame.md) or
-[Layer](new-layer.md). (This behavior can be disable from *Edit > Options > Timeline >
-Show timeline automatically*.)
+タイムラインには、アクティブなスプライトの持つ[レイヤー](layers.md)とフレームが表示されます。メニューの *表示 > タイムライン* または、<kbd>タブ</kbd>キーを押すことで表示非表示を切り替えられます。また、[新規フレーム]](new-frame.md)の作成や[新規レイヤー](new-layer.md)の作成を行うと自動で表示されます。（この動作については、*編集 > 環境設定 > タイムライン > タイムラインを自動的に表示する* で無効にできます。）
 
-You can use *Layer > New Layer* menu (<kbd>Shift+N</kbd>) to create new layers
-or *Frame > New Frame* menu (<kbd>Alt+N</kbd>) to add frames.
+新しいレイヤーを追加するにはメニューの *レイヤー > 新規 > 新規レイヤー* （<kbd>Shift+N</kbd>）を、新しいフレームを追加するには、メニューの *フレーム > 新規フレーム* （<kbd>Alt+N</kbd>）を使います。
 
-### Common Operations
+### 基本的な操作
 
-* [Layers](layers.md):
-  * [Move layers](move-layers.md)
-  * [Copy layers](copy-layers.md)
-* [Frames](animation.md):
-  * [Move frames](move-frames.md)
-  * [Copy frames](copy-frames.md)
-* [Cels](cel.md):
-  * [Move cels](move-cels.md)
-  * [Copy cels](copy-cels.md)
+* [レイヤー](layers.md):
+  * [レイヤーを移動](move-layers.md)
+  * [レイヤーをコピー](copy-layers.md)
+* [フレーム](animation.md):
+  * [フレームを移動](move-frames.md)
+  * [フレームをコピー](copy-frames.md)
+* [セル](cel.md):
+  * [セルを移動](move-cels.md)
+  * [セルをコピー](copy-cels.md)
 
-## Preferences
+## 設定
 
-You can configure the Timeline pressing
-the ![Configure Timeline Icon](animation/configure-timeline.png) button.
+タイムライン設定ボタン![Configure Timeline Icon](animation/configure-timeline.png) を押すとタイムラインの設定が行えます。
 
-Some options:
+いくつかのオプションがあります。
 
-1. [Onion Skinning](onion-skinning.md)
-1. [First frame as 0](https://community.aseprite.org/t/3895/2) (or any other number)
+1. [オニオンスキン](onion-skinning.md)
+1. [最初のフレームを0に](https://community.aseprite.org/t/3895/2)（他の番号にも）
 
-## Copy between documents
+## ドキュメントをまたいだコピー
 
-You can copy and paste layers, frames, or cels between different
-documents using *Edit > Copy* and *Edit > Paste*.
+*編集 > コピー* と *編集 > 貼り付け* を利用すると、レイヤー、フレーム、セルをドキュメントをまたいでコピーできます。
 
 ![Copy and Paste on Timeline](timeline/timeline-copy-and-paste.gif)
 
@@ -46,7 +39,7 @@ documents using *Edit > Copy* and *Edit > Paste*.
 
 **SEE ALSO**
 
-[Animation](animation.md) |
-[Onion Skinning](onion-skinning.md) |
-[Layers](layers.md) |
-[Cel](cel.md)
+[アニメーション](animation.md) |
+[オニオンスキン](onion-skinning.md) |
+[レイヤー](layers.md) |
+[セル](cel.md)

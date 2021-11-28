@@ -1,21 +1,16 @@
-# Preview Window
+# プレビューウィンドウ
 
-The preview window is the little window that can show you the
-animation preview in realtime while you edit your animation:
+プレビューウィンドウは、アニメーション編集中にリアルタイムにアニメーションのプレビューを表示することができます。
 
-<img src="/docs/preview-window/preview-window.png" alt="Preview Window" class="x2" />
+<img src="preview-window/preview-window.png" alt="Preview Window" class="x2" />
 
-You can show/hide this little window pressing the <kbd>F7</kbd> key or with the
-*View > Preview* menu option.
+プレビューウィンドウは、<kbd>F7</kbd>キー、またはメニューの *表示 > プレビュー* で表示非表示を切り替えられます。
 
-You can also press the little play button ![Play
-button](preview-window/play-button.png) or press <kbd>Shift+Enter</kbd> to
-start playing the sprite animation (or the current [tag](tags.md)) in
-the window.
+ウィンドウ右上の小さな再生ボタン![Play button](preview-window/play-button.png) または <kbd>Shift+Enter</kbd>キーを押すと、プレビューウィンドウでアニメーション（または現在の[タグ](tags.md)）の再生ができます。
 
 ---
 
 **SEE ALSO**
 
-[Workspace](workspace.md) |
-[Animation](animation.md)
+[ワークスペース](workspace.md) |
+[アニメーション](animation.md)

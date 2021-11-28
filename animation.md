@@ -1,46 +1,41 @@
-# Animation
+# アニメーション
 
-Aseprite's main goal is to be a tool to create animations. The
-[timeline](timeline.md) gives you total control over frames,
-[layers](layers.md), and [cels](cel.md).
+Aseprite が目指しているのはアニメーションを作成するツールとなることです。
+Aseprite では、[タイムライン](timeline.md) によってフレーム、[レイヤー](layers.md)、[セル](cel.md)を操作できます。
 
-The general workflow is:
+一般的なワークフローは以下のようになります。
 
-1. You [draw](drawing.md) the first frame
-1. Then you [add new frames](new-frame.md) (e.g. pressing <kbd>Alt+N</kbd>) and continue drawing them
-1. You can navigate frames using <kbd>Left</kbd> and <kbd>Right</kbd> arrow keys (or <kbd>,</kbd> and <kbd>.</kbd>) to
-   go to the previous or next frames respectively
-1. You can [preview the animation](preview-window.md) using
-   the Play button ![Play icon](animation/play-button.png) or pressing <kbd>Enter</kbd> key
-1. You can [tag](tags.md) a range of frames for future reference or to separate
-   different animations of the same sprite
+1. 最初のフレームを[描きます。](drawing.md)
+1. 次に、[新しいフレームを追加](new-frame.md)（<kbd>Alt+N</kbd> を押すなど）して、新たなフレームを描きます。
+1. フレーム間は <kbd>←</kbd> と <kbd>→</kbd> もしくは、<kbd>,</kbd> と <kbd>.</kbd> で前後に移動できます。
+1. 再生ボタン![Play icon](animation/play-button.png) もしくは <kbd>Enter</kbd> キーで[アニメーションをプレビュー](preview-window.md)できます。
+1. あとで参照したり、同じスプライト内の別のアニメーションと区別するために、フレームのグループに[タグ付け](tags.md)が出来ます。
 
-There are some extra tools like
-the [Preview Window](preview-window.md) and [Onion Skinning](onion-skinning.md) that
-will make your life a lot easier to animate.
+ほかにも、[プレビューウィンドウ](preview-window.md)や[オニオンスキン](onion-skinning.md)といった、
+アニメーション作りを楽にしてくれるツールがあります。
 
-### Common Operations
+### 一般的な操作方法
 
-1. [Add a new frame copying the current one](new-frame.md)
-1. [Add a new empty frame](new-frame.md#new-empty-frame)
-1. [Copy frames](copy-frames.md) or [cels](copy-cels.md)
-1. [Move frames](move-frames.md) or [cels](move-cels.md)
-1. Remove frames
-1. [Reuse frames](linked-cels.md)
-1. [Tag several frames](tags.md)
-1. [Change the duration of a specific frame](frame-duration.md)
-1. [Copy layers/frames/cels between files](timeline.md#copy-between-documents)
-1. [Loop a section](loop.md)
-1. [Reverse frames](reverse-frames.md)
+1. [現在のフレームをコピーして新しいフレームとして追加](new-frame.md)
+1. [空のフレームを追加](new-frame.md#new-empty-frame)
+1. [フレームをコピー](copy-frames.md)または[セルをコピー](copy-cels.md)
+1. [フレームを移動](move-frames.md)または[セルを移動](move-cels.md)
+1. フレームを削除
+1. [セルを結合して再利用](linked-cels.md)
+1. [フレームへのタグ付け](tags.md)
+1. [フレームの長さの変更](frame-duration.md)
+1. [ファイル間でのレイヤー・フレーム・セルのコピー](timeline.md#copy-between-documents)
+1. [選択範囲をループ](loop.md)
+1. [フレームの順序を反転](reverse-frames.md)
 
-### Onion Skinning
+### オニオンスキン
 
-See the [Onion Skinning](onion-skinning.md) section.
+[オニオンスキン](onion-skinning.md)を見てください。
 
 ---
 
 **SEE ALSO**
 
-[Timeline](timeline.md) |
-[Onion Skinning](onion-skinning.md) |
-[Continuous Layers](continuous-layers.md)
+[タイムライン](timeline.md) |
+[オニオンスキン](onion-skinning.md) |
+[自動結合レイヤー](continuous-layers.md)

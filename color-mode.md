@@ -1,56 +1,49 @@
-# Color Mode
+# カラーモード
 
-Aseprite supports three different kind of color modes:
+Aseprite には以下の3種類のカラーモードがあります。
 
-* RGB
-* Indexed
-* Grayscale
+* RGB カラー
+* インデックスカラー
+* グレースケール
 
-When you create a [new sprite](new-sprite.md) you have to choose one of these color
-modes. In this section you will see the details of each one.
+[新規スプライト](new-sprite.md)を作るときには、カラーモードを選ぶ必要があります。
+この項目ではそれぞれのカラーモードの詳細を見ていきます。
 
-## RGB
+## RGB カラー（RGBA カラー）
 
 ![RGB Mode](color/rgb-mode.png)
 
-RGB, or RGBA, stands for Red-Green-Blue-Alpha. Each image pixel
-contains these four components. It means that a pixel is completely
-independent from others.
+RGB または RGBA は Red-Green-Blue-Alpha（赤-緑-青-アルファ）を省略したものです。
+全てのピクセルはこれら4要素全てを持ちます。つまり、それぞれのピクセルは完全に独立しています。
 
-The alpha component specifies how much opaque the color is:
-`Alpha = 255` means completely opaque, and `Alpha = 0` completely
-transparent.
+アルファはどれだけ不透明かを表します。
+つまり、`アルファ = 255`は完全に不透明で、`アルファ = 0`は完全な透明です。
 
-Special note: Background layer doesn't have an alpha component, so
-it will be always opaque.
+特別なメモ：背景レイヤーはアルファを持っていません。そのため常に不透明です。
 
-## Indexed
+## インデックスカラー
 
 ![Indexed Mode](color/indexed-mode.gif)
 
-In this mode each pixels is a number that references a palette
-color. Your palette can contain up to 256 colors, and each pixel
-points to one of those colors (from 0 to 255).
+このモードでは、ピクセルはパレットの色を参照するための番号（インデックス）を持ちます。
+パレットには256色まで置くことができ、ピクセルは（0~255 の番号で）パレットの1色を参照します。
 
-Unlike RGBA, if you modify the palette color, all pixels that are
-referencing that color will change their appearance.
+RGBA カラーと異なり、パレットの色を変更した場合、その色を参照している全てのピクセルの色が変わります。
 
-An important concept on Indexed images is that for transparent layers,
-we need a special index to act as the transparent color.
-Generally this index is 0, but you can change it
-from *Sprite > Properties* menu.
+インデックスカラーで重要なのは透過レイヤーの場合です。
+透過レイヤーでは透明色を表す特別なインデックスが必要です。
+一般的には0を使用しますが、メニューの *スプライト > プロパティ* から変更が可能です。
 
-## Grayscale
+## グレースケール
 
 ![Grayscale Mode](color/gray-mode.png)
 
-It's more like RGBA, just that you have two channels: Value and Alpha.
-Here 0 means black and 255 is white. The alpha channel behaves exactly
-like in RGBA mode.
+インデックスカラーより RGBA カラーに似ていますが、明るさとアルファの2つのチャンネルしかありません。
+明るさは 0 が黒、255 が白を表します。グレースケールでのアルファチャンネルは RGBA カラーのものと全く同じ動きをします。
 
 ---
 
 **SEE ALSO**
 
-[Color](color.md) |
-[New Sprite](new-sprite.md)
+[カラー](color.md) |
+[新規スプライト](new-sprite.md)

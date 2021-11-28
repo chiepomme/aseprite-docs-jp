@@ -1,25 +1,24 @@
-# Tags
+# タグ
 
-A tag indicates an animation of your sprite. Using several tags you
-can organize different animations of your sprite:
+タグはスプライトの中で1つのアニメーションを定義します。
+複数のタグを使用すると、スプライト内で複数のアニメーションを管理することができます。
 
-<img src="/docs/tags/tags.png" alt="Tags" class="xN" />
+<img src="tags/tags.png" alt="Tags" class="xN" />
 
-To create a tag you can [select a range](range.md) of frames and use the *Frame >
-Tags > New Tag* menu option, or right-click the range and select *New
-Tag*, or press the *F2* key two times, i.e. the first time will create
-a *"Loop"* tag, the second time you press <kbd>F2</kbd> will show the tag
-properties so you can change its name, etc.:
+タグを作成するには、フレームを[範囲選択](range.md)してから以下の手順で作成できます。
 
-<img src="/docs/tags/tag-properties.png" alt="Tag Properties" class="x2" />
+* メニューの *フレーム >タグ > 新規タグ* を選択する
+* 選択した範囲を右クリックして *新規タグ* を選択する
+* <kbd>F2</kbd>キーを2回押す（1回目で *ループ* タグが設定され、2回目でタグのプロパティが開くので、そこで名前などを変更できます。）
 
-The most interesting property of a tag is the *"Animation Direction"*,
-where you can specify three different modes to play the tag:
-*Forward*, *Reverse*, or *Ping-pong*.
+<img src="tags/tag-properties.png" alt="Tag Properties" class="x2" />
+
+タグのプロパティで一番面白いのは *アニメーションの方向* です。
+タグの再生の方向を *通常 Forward*、*反転 Reverse*、*ピンポン（通常＋反転） Ping-pong* から選ぶことができます。
 
 ---
 
 **SEE ALSO**
 
-[Animation](animation.md) |
-[Sprite](sprite.md)
+[アニメーション](animation.md) |
+[スプライト](sprite.md)

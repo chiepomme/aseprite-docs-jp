@@ -1,69 +1,62 @@
-# Aseprite Help
+# Aseprite ヘルプ
 
-Aseprite lets you create 2D animations for videogames. From sprites,
-to pixel-art, retro style graphics, and whatever you like about the
-[8-bit](https://en.wikipedia.org/wiki/Third_generation_of_video_game_consoles)
-and [16-bit](https://en.wikipedia.org/wiki/Fourth_generation_of_video_game_consoles) era.
+Aseprite を使えば、ゲームのための2Dアニメーションを作ることができます。
+スプライトからピクセルアートまで、レトロなスタイルのグラフィックスでも、[8-bit](https://en.wikipedia.org/wiki/Third_generation_of_video_game_consoles) と [16-bit](https://en.wikipedia.org/wiki/Fourth_generation_of_video_game_consoles) の時代のようなものなら好きなものを何でも作れます。
 
-Here you will find some help, tutorials, and little tips to use
-Aseprite and start getting the best from it from the very
-beginning. If you have some question you can start looking at the
-[Frequently Asked Questions](/faq/).
+ここには、Aseprite を使うときのヘルプ、チュートリアル、ちょっとしたヒントが集められています。これらを読めば、使い始めの段階から良いスタートを切ることができるでしょう。もし何か質問があれば[よくある質問](https://www.aseprite.org/faq/)を読んでみてください。
 
-To get started, you can print the [Quick Reference](/quickref/). It
-contains several keyboard shortcuts, so it could be handy to have it
-at your side.
+まずはじめに、[クイックリファレンス](https://www.aseprite.org/quickref/)を印刷するとよいでしょう。クイックリファレンスには、いろいろなキーボードショートカットが載っており、そばに置いておくと便利です。（訳注：日本語版は[こちら](https://wikiwiki.jp/aseprite/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)）
 
-**[Basics](basics.md)**: General concepts, elements in the window, expected workflow, etc.
+**[基本](basics.md)**：基本的な概念、ウィンドウの構成要素、想定しているワークフローなど。
 
-  * [Workspace](workspace.md)
-  * [Workflow](workflow.md)
-  * [Sprite](sprite.md)
+  * [ワークスペース](workspace.md)
+  * [ワークフロー](workflow.md)
+  * [スプライト](sprite.md)
 
-**[Image & Sprite](sprite.md)**:
+**[画像とスプライト](sprite.md)**：
 
-  * [Create a new Sprite](new-sprite.md) or [Open an existent one](open.md)
-  * [Resize Sprite](sprite-size.md)
-  * [Color Mode](color-mode.md) & [Color Profile](color-profile.md)
-  * [Save Your Work](save.md)
+  * [新しいスプライトを作る](new-sprite.md)、または[既存のスプライトを開く](open.md)
+  * [スプライトのサイズ変更](sprite-size.md)
+  * [カラーモード](color-mode.md)と[カラープロファイル](color-profile.md)
+  * [保存する](save.md)
 
-**[Animation](animation.md)**: How to create animations & manipulate frames
+**[アニメーション](animation.md)**：アニメーションの作り方とフレームの変更方法
 
-  * [Onion Skinning](onion-skinning.md)
+  * [オニオンスキン](onion-skinning.md)
 
-**[Layers](layers.md)**: How to handle several layers to compose images
+**[レイヤー](layers.md)**：複数のレイヤーを扱って画像を組み立てる方法
 
-**[Selecting](selecting.md)**: How to select
+**[選択](selecting.md)**：選択する方法
 
-**[Drawing](drawing.md)**: How to start drawing
+**[描く](drawing.md)**：描き始める方法
 
-  * [Zoom](zoom.md)
+  * [ズーム](zoom.md)
 
-**[Transformations](transformations.md)**:
+**[変形](transformations.md)**：
 
-  * [Flip](flip.md)
-  * [Canvas](canvas.md)
-  * [Resize](resize.md)
-  * [Rotate](rotate.md)
+  * [反転](flip.md)
+  * [キャンバス](canvas.md)
+  * [サイズ変更](resize.md)
+  * [回転](rotate.md)
 
-**[Exporting](exporting.md)**:
+**[エクスポート](exporting.md)**：
 
-  * [Sprite Sheets](sprite-sheet.md)
-  * [Command Line Interface (CLI)](cli.md)
+  * [スプライトシート](sprite-sheet.md)
+  * [コマンドラインインターフェース (CLI)](cli.md)
 
-**[Extensions](extensions.md)**
+**[拡張機能](extensions.md)**
 
-  * [Scripting](scripting.md)
+  * [スクリプト](scripting.md)
 
-**[Troubleshooting](troubleshooting.md)**:
+**[トラブルシューティング](troubleshooting.md)**：
 
-  * [Data Recovery](data-recovery.md)
-  * [Reset Preferences](reset-preferences.md)
-  * [Debug Option](debug.md)
+  * [データ復元](data-recovery.md)
+  * [設定をリセット](reset-preferences.md)
+  * [デバッグオプション](debug.md)
 
 ---
 
 **SEE ALSO**
 
-[Frequently Asked Questions](/faq/) |
-[Tutorial](/tutorial/)
+[よくある質問](https://www.aseprite.org/faq/) |
+[チュートリアル](tutorial.md)

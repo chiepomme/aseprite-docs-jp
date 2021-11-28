@@ -1,11 +1,8 @@
-# Frame Duration
+# フレームの長さ
 
-You can change the duration of the current frame with *Frame > Frame
-Properties* menu (<kbd>P</kbd> key).
+現在のフレームの長さは*フレーム > フレームのプロパティ*（<kbd>P</kbd>キー）で変更できます。
 
-Also you change the duration of several frames selecting a range of
-frames in the [Timeline](timeline.md), right clicking them, and
-selecting *Properties* option in the popup:
+複数フレームの長さをまとめて変更することも出来ます。[タイムライン](timeline.md)でフレームを複数選択してから、フレーム番号を右クリックして*フレームのプロパティ*オプションを開くことで変更ができます。
 
 ![Timeline Right Click](frame-duration/timeline-right-click.gif)
 
@@ -13,4 +10,4 @@ selecting *Properties* option in the popup:
 
 **SEE ALSO**
 
-[Animation](animation.md)
+[アニメーション](animation.md)

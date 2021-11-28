@@ -1,25 +1,26 @@
-# Selected Range
+# 範囲選択
 
-In the [timeline](timeline.md) you can select a range of frames:
+[タイムライン](timeline.md)では、フレームを範囲選択することができます。
 
-<img src="/docs/range/frames-range.png" alt="Frames Range " class="x2" />
+<img src="range/frames-range.png" alt="Frames Range " class="x2" />
 
-A range of layers:
+レイヤーの範囲選択も可能です。
 
-<img src="/docs/range/layers-range.png" alt="Layers Range " class="x2" />
+<img src="/range/layers-range.png" alt="Layers Range " class="x2" />
 
-Or a range of cels:
+セルの範囲選択もできます。
 
-<img src="/docs/range/cels-range.png" alt="Cels Range " class="x2" />
+<img src="/range/cels-range.png" alt="Cels Range " class="x2" />
 
-After selecting the range you can do several operations with it like:
+範囲選択した後、以下の様な操作を行うことができます。
 
-* [moving frames](move-frames.md) or [tagging frames](tags.md), or
-* [changing the order of layers](move-layers.md), or
-* [moving cels](move-cels.md).
+* [フレームを移動](move-frames.md)
+* [フレームにタグ付け](tags.md)
+* [レイヤーの順序を変更](move-layers.md)
+* [セルを移動](move-cels.md).
 
 ---
 
 **SEE ALSO**
 
-[Timeline](timeline.md)
+[タイムライン](timeline.md)

@@ -1,52 +1,43 @@
-# Selecting
+# 選択
 
-You can select parts of the sprite using one of the selection tools
-e.g. the Marquee Tool ![Marquee Tool Icon](tools/marquee-tool.png) (<kbd>M</kbd> key),
-and then [move it](move-selection.md) or [transform it](transformations.md)
-([scale](resize.md), [rotate](rotate.md), etc.). When you select a
-portion of the sprite, you will see a
-[marching ants](https://en.wikipedia.org/wiki/Marching_ants) effect:
+選択ツール![Marquee Tool Icon](tools/marquee-tool.png)（<kbd>M</kbd>キー）を使うとスプライトの一部分を選択できます。
+選択した物は、[移動](move-selection.md)したり、[変形](transformations.md)したり、[拡大縮小](resize.md)したり、[回転](rotate.md)したりできます。
+
+スプライトの一部を選択すると、英語で[アリの行進](https://en.wikipedia.org/wiki/Marching_ants)と呼ばれる、動く点線が見られます。
 
 ![Marching ants](selecting/marching-ants.gif)
 
-When you make a selection, you are selecting the active [cel](cel.md),
-so all transformation will be made to that specific cel only.
+選択範囲を作成すると、同時に現在アクティブな[セル](cel.md)が選択されます。そのため、全ての変形はこのセルにのみ影響を与えます。
 
-## Add/Subtract/Intersect
+## 選択範囲の追加・削除・共通範囲
 
-In the [context bar](context-bar.md) you can find a set of modifiers that
-change what to do with the selected region: ![Modifiers](selecting/modifiers.png)
+[コンテキストバー](context-bar.md)には、選択領域に対しての操作を変更するボタンがあります。![Modifiers](selecting/modifiers.png)
 
-By default, when you press the left mouse button, drag it, and then
-release it, it will replace the whole selection. But you can modify
-this behavior with the other options (each option has a keyboard
-shortcut):
+デフォルトでは、左のマウスボタンをドラッグして離すと、既存の選択範囲を置き換えます。
+この挙動はオプションによって切り替えられます。（それぞれキーボードショートカットが割り当てられています。）
 
-* ![Replace Selection](selecting/replace-selection.png): Default operation, replace the whole selection with the new one (drag left mouse button)
-* ![Add Selection](selecting/add-selection.png): Creates a union between the existing selection a the new one (drag left mouse button + <kbd>Shift</kbd> key)
-* ![Subtract Selection](selecting/subtract-selection.png): Subtracts the new selection to the existing one (drag left mouse button + <kbd>Alt+Shift</kbd> key, or alternative: drag right mouse button)
-* ![Intersect Selection](selecting/intersect-selection.png): Intersects the existing selection with the new one (drag left mouse button + <kbd>Ctrl+Shift</kbd>)
+* ![選択範囲を置き換える](selecting/replace-selection.png)：デフォルトの操作です。既存の選択範囲全体を新しいもので置き換えます。（左ドラッグ)
+* ![選択範囲に追加する](selecting/add-selection.png)： 既存の選択範囲に新しい選択範囲を追加します。(<kbd>Shift</kbd>を押しながら左ドラッグ)
+* ![選択範囲から削除する](selecting/subtract-selection.png)：既存の選択範囲から新しい選択範囲の領域を削除します。（<kbd>Alt+Shift</kbd>を押しながら左ドラッグ、もしくは右ドラッグ）
+* ![選択範囲との共通部分を選択する](selecting/intersect-selection.png)：既存の選択範囲と新しい選択範囲の重なった部分を選択します。（<kbd>Ctrl+Shift</kbd>を押しながら左ドラッグ）
 
-## Select Content
+## 内容を選択する
 
-You can select the whole sprite canvas using *Select > All* (<kbd>Ctrl+A</kbd>
-or <kbd>⌘A</kbd>), or the active [cel](cel.md) content (non-transparent pixels)
-using *Edit > Transform* (<kbd>Ctrl+T</kbd> or <kbd>⌘T</kbd>).
+メニューの *選択 > 全てを選択* （<kbd>Ctrl+A</kbd> または <kbd>⌘A</kbd>）を使用すると、スプライトのキャンバス全体を選択できます。
+また、メニューの *編集 > 変形* （<kbd>Ctrl+T</kbd> または <kbd>⌘T</kbd>）を使用すると、アクティブな[セル](cel.md)の内容（非透明ピクセル）だけを選択できます。
 
-## Deselect and reselect
+## 選択範囲の解除と再選択
 
-You can hide the current selection using *Select > Deselect*
-(<kbd>Ctrl+D</kbd> or <kbd>⌘D</kbd>). Then you can make it appear again using
-*Select > Reselect* (<kbd>Ctrl+Shift+D</kbd> or <kbd>⇧⌘D</kbd>).
+メニューの *選択 > 選択範囲の解除* （<kbd>Ctrl+D</kbd> または <kbd>⌘D</kbd>）を使用すると、現在の選択範囲を非表示にすることができます。
+また、メニューの *選択 > 再選択* （<kbd>Ctrl+Shift+D</kbd> または <kbd>⇧⌘D</kbd>）で再表示することができます。
 
-## Invert
+## 選択範囲の反転
 
-You can invert the selection using
-*Select > Invert* (<kbd>Ctrl+Shift+I</kbd> or <kbd>⇧⌘I</kbd>).
+メニューの *選択 > 選択範囲の反転* （<kbd>Ctrl+Shift+I</kbd> または <kbd>⇧⌘I</kbd>）を使用して、選択範囲を反転できます。
 
 ---
 
 **SEE ALSO**
 
-[Transformations](transformations.md) |
-[Move Selection](move-selection.md)
+[変形](transformations.md) |
+[選択範囲を移動](move-selection.md)

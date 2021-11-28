@@ -1,83 +1,55 @@
-# Data Recovery
+# データ復元
 
-When Aseprite is running, it saves some temporary data to restore your
-sprite in case that your computer (or Aseprite) crashes, or you close
-Aseprite without saving your sprites. (Even if you save your sprites,
-the original backup is kept in your disk at least for a couple of
-weeks.)
+コンピューター（もしくは Aseprite）がクラッシュしたときにや、保存しないで閉じてしまったときにスプライトを復元できるように、Aseprite は実行中に一時的なデータを保存しています。（もしスプライトをきちんと保存したとしても、オリジナルのバックアップは少なくとも数週間ディスクに残ります。）
 
-## Open Sprites from Previous Sessions
+## 以前のセッションからスプライトを開く
 
-To restore a sprite from a previous sessions you have to use the
-"Recover Files" option in the "Home" tab:
+以前のセッションからスプライトを復元するためには、「ホーム」タブの「リカバリーファイル」を使用します。
 
-<p><img src="/docs/data-recovery/home-tab.png" alt="Home tab" class="x2" /></p>
+<p><img src="data-recovery/home-tab.png" alt="Home tab" class="x2" /></p>
 
-If Aseprite crashes (wasn't closed correctly) and some sprite wasn't
-saved, you will see the "Recover Files" option as a button:
+Aseprite がクラッシュ（正しく終了しなかった）して、スプライトが保存されていない場合は、「リカバリーファイル」がボタンとして表示されます。
 
-<p><img src="/docs/data-recovery/home-tab-after-crash.png" alt="Home tab" class="x2" /></p>
+<p><img src="data-recovery/home-tab-after-crash.png" alt="Home tab" class="x2" /></p>
 
-This option opens the "Recover Files" tab, where you can double-click
-an item (or select it and press "Recover Sprite") to recover a sprite
-from a previous sessions:
+このボタンは「リカバリーファイル」タブを開きます。アイテムをダブルクリック（または、選択してから「リカバリースプライト」を押す）と、以前のセッションからスプライトを復元できます。
 
-<p><img src="/docs/data-recovery/recover-files-tab.png" alt="Home tab" class="x2" /></p>
+<p><img src="data-recovery/recover-files-tab.png" alt="Home tab" class="x2" /></p>
 
-## Preferences
+## 設定
 
-In the *Edit > Preferences > Files* section you can configure how the
-backup data is saved and for how long:
+*編集 > 環境設定 > ファイル* の項目では、バックアップデータをどのようにどのくらいの期間保存するかを指定できます。
 
 ![Data Recovery Preferences](data-recovery/recover-data-preferences.png)
 
-* *Automatically save recovery data every X seconds/minutes*:
-  Indicates that Aseprite should auto-save backup data (on disk) every
-  X seconds or minutes for each edited sprite (2 minutes by default).
-* *Keep edited sprite data for Y days/weeks/months*: For each sprite
-  that was edited, Aseprite will keep the backup data (on disk) for
-  the given number of days/weeks/months (1 week by default).
-* *Keep closed sprite on memory for Z seconds/minutes/hours*: If you
-  close a sprite by mistake, Aseprite will keep the sprite (on memory,
-  with the undo information) for at least the given time (15 minutes
-  by default). You can re-open a closed file
-  with *File > Open Recent > Reopen Closed File* menu
-  option (Ctrl+Shift+T or ⇧⌘T keyboard shortcut).
+* *常にリカバリデータを自動保存*：編集したスプライトごとに、一定の間隔でバックアップデータをディスクに自動保存します。（デフォルトでは2分ごとです）
+* *編集したスプライトデータの保持*：編集したスプライトごとに、バックアップデータを指定期間の間保持します。（デフォルトでは1週間です）
+* *閉じたスプライトをメモリーに保持*：誤ってスプライトを閉じてしまったときに、（メモリ上にアンドゥ情報込みで）スプライトを少なくとも指定時間の間保持します。（デフォルトでは15分です。）閉じてしまったファイル再度開くためには、メニューから *ファイル > 最近使ったファイル > 閉じたファイルを再度開く* （<kbd>Ctrl+Shift+T</kbd> または <kbd>⇧⌘T</kbd>）を選択します。
 
-## Internals
+## 内部動作
 
-The backup data is saved in a subfolder named `sessions` inside your
-[Preferences Folder](preferences-folder.md):
+バックアップデータは[環境設定フォルダ](preferences-folder.md)の中の `sessions` という名前のフォルダに保存されます。
 
 ![Sessions Folder](data-recovery/sessions-folder-focused.png)
 
-`sessions` might contain several subfolders (one for each execution of Aseprite):
+`sessions` はいくつかのフォルダを含んでいることがあります。（それぞれのフォルダが複数開いた Aseprite のそれぞれのウィンドウに対応しています。）
 
 ![Inside Sessions Folder](data-recovery/in-sessions-folder.png)
 
-The name of these folders (e.g. `20180405-165510-1128`) has a meaning,
-which is `YYYYMMDD-HHMMSS-PID`:
+これらのフォルダ名（`20180405-165510-1128` のような）には意味があり、`YYYYMMDD-HHMMSS-PID` というフォーマットになっています。
 
-* `YYYY`, `MM`, `DD`: Date (year, month, day) when the session
-  started (when Aseprite was launched).
-* `HH`, `MM`, `SS`: Time (hour, minute, second) of that day when the session started.
-* `PID`: Process number/identifier of the Aseprite instance that was
-  handling that session folder.
+* `YYYY`, `MM`, `DD`：セッションがスタートした（つまり Aseprite が起動した）日付。（YYYY:年、MM:月、DD:日）
+* `HH`, `MM`, `SS`：セッションがスタートした時刻。（HH:時、MM:分、SS:秒）
+* `PID`：セッションフォルダを扱っている Aseprite インスタンスのプロセス番号/識別子。
 
-Each of these folders contain useful data to restore some sprites that
-you might have lost in the crash.
+フォルダには失ってしまったスプライトを復元するのに有用なデータが含まれています。
 
-If you aren't able to recover your sessions using the "Recover Files"
-option from "Home" tab, but you have one of these
-`sessions/YYYYMMDD-HHMMSS-PID` folder in your [Preferences Folder](preferences-folder.md),
-you can compress one of those folder in a `.zip` and send it to
-[support@aseprite.org](mailto:support@aseprite.org). And we can
-try to recover your data.
+「ホーム」タブの「リカバリーファイル」を使ってもセッションを復元できなかったが、[環境設定フォルダ](preferences-folder.md)に `sessions/YYYYMMDD-HHMMSS-PID` フォルダがある場合、それらのフォルダをまとめて `.zip` で圧縮して [support@aseprite.org](mailto:support@aseprite.org) まで送ってください。私たちが復元を試みます。
 
 ---
 
 **SEE ALSO**
 
-[Troubleshooting](troubleshooting.md) |
-[Preferences Folder](preferences-folder.md) |
-[Blog Article About Data Recovery Internals](https://dev.aseprite.org/2015/06/14/data-recovery/)
+[トラブルシューティング](troubleshooting.md) |
+[環境設定フォルダ](preferences-folder.md) |
+[データ復元の内部動作についてのブログ記事](https://dev.aseprite.org/2015/06/14/data-recovery/)

@@ -1,14 +1,9 @@
-# Move Selection
+# 選択範囲を移動
 
-After [selecting](selecting.md) a part of the [active cel](cel.md),
-you can move the selected area of pixels dragging-and-dropping with
-the mouse or using the arrow keys:
+[アクティブなセル](cel.md)の一部を[選択](selecting.md)したあと、マウスでドラッグしたり矢印キーで移動をしたりできます。
 
 ![Move Selection](move-selection/move-selection.gif)
 
-If you are moving a region of pixels from the
-[background layer](layers.md#background-layer) the selection will be
-cleared with the active
-[background color](color-bar.md#background-color). If you move a
-transparent layer, the region will be cleared with the transparent
-color.
+
+[背景レイヤー](layers.md#背景レイヤー)でピクセルを移動する場合、動かした後の元の選択範囲には[背景色](color-bar.md#背景色)が残ります。
+透過レイヤーの場合には、背景色ではなく透明になります。

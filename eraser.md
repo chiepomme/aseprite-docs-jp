@@ -1,19 +1,16 @@
-# Eraser
+# 消しゴム
 
-Erase pixels with the
-[background color](color-bar.md#background-color) when used on the
-[background layer](layers.md#background-layer), and with the
-transparent color on
-[transparent layers](layers.md#transparent-layers).
+消しゴムツールはピクセルを消すことができます。
+[背景レイヤー](layers.md#background-layer)で消しゴムツールを使用すると
+[背景色](color-bar.md#background-color)に、
+[透過レイヤー](layers.md#transparent-layers)の場合には、透明色になります。
 
-If you use the Eraser tool with the right-click, it will replace the
-[foreground color](color-bar.md#foreground-color) with the
-[background color](color-bar.md#background-color).
+右クリックで消しゴムツールを使用する場合、[前景色](color-bar.md#foreground-color)を[背景色](color-bar.md#background-color)で置き換えます。
 
 ---
 
 **SEE ALSO**
 
-[Drawing](drawing.md) |
-[Color bar](color-bar.md) |
-[Layers](layers.md)
+[描く](drawing.md) |
+[カラーバー](color-bar.md) |
+[レイヤー](layers.md)

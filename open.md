@@ -1,10 +1,10 @@
-# Open
+# 開く
 
-You can load your sprite and continue working on it using *File > Open* menu.
+*ファイル > 開く* からスプライトを読み込み作業の続きをすることができます。
 
-## Loading image sequences
+## 連番画像の読み込み
 
-If you have a sequence of images like:
+以下の様な連番画像があるとします。
 
 * `frame0.png`
 * `frame1.png`
@@ -12,9 +12,8 @@ If you have a sequence of images like:
 * ...
 * `frameN.png`
 
-You can load this sequence as one animation using *File > Open* menu,
-selecting `frame0.png`, and then answering *Yes* to the following
-dialog that will appear:
+このような場合、*ファイル > 開く* で `frame0.png` を選択することで、1つのアニメーションとして読み込むことができます。
+選択すると出てくるダイアログでは同意を押してください。
 
 ![Load sequence confirmation](open/loadsequence.png)
 
@@ -22,5 +21,5 @@ dialog that will appear:
 
 **SEE ALSO**
 
-[Save](save.md) |
-[Exporting](exporting.md)
+[保存](save.md) |
+[エクスポート](exporting.md)

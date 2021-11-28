@@ -1,8 +1,6 @@
-# New Layer
+# 新規レイヤー
 
-Add new layers using *Layer > New > New Layer* menu (`Shift+N` key). Also
-you can right-click a layer in the [timeline](timeline.md) and
-select *New* option:
+メニューの *レイヤー > 新規 > 新規レイヤー* （`Shift+N` キー）で、新しいレイヤーを追加できます。また、 [タイムライン](timeline.md) のレイヤー上で右クリックし、 *新規 > 新規レイヤー* を選ぶことでも追加が可能です。
 
 ![Layer right-click](new-layer/layer-right-click.png)
 
@@ -10,5 +8,5 @@ select *New* option:
 
 **SEE ALSO**
 
-[Layers](layers.md) |
-[Timeline](timeline.md)
+[レイヤー](layers.md) |
+[タイムライン](timeline.md)

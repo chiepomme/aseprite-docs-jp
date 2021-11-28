@@ -1,47 +1,36 @@
-# Color
+# 色
 
-This section talks about how Aseprite manages color.
+この項目では、Aseprite がどのように色を扱っているかを説明します。
 
-First of all you need to understand that a specific sprite
-([newly created](new-sprite.md) or [an existent sprite](open.md))
-has three properties that modify how the sprite is edited and viewed:
+まず、スプライト([新規スプライト](new-sprite.md)または[既存のスプライト](open.md)）は以下3つのプロパティを持ちます。それらのプロパティによって、どのように編集されるかや、どのように表示されるかが変わります。
 
-* The sprite [color mode](color-mode.md)
-* The [color profile](color-profile.md)
-* And the [transparent color](transparent-color.md)
-  (only in [indexed images](color-mode.md#indexed))
+* スプライトの[カラーモード](color-mode.md)
+* [カラープロファイル](color-profile.md)
+* [透明色](transparent-color.md)（[インデックスカラーの画像](color-mode.md#インデックスカラー)でのみ使用されます）
 
-Along with this, there are two active colors that can be used to paint
-or erase parts of the sprite:
+これに加えて、2つのアクティブカラーがあり、それぞれスプライトを描くときと消すときに使用されます。
 
-* The active [Foreground Color](color-bar.md#foreground-color)
-* The active [Background Color](color-bar.md#background-color)
+* アクティブな[前景色](color-bar.md#前景色)
+* アクティブな[背景色](color-bar.md#背景色)
 
-## Color Mode
+## カラーモード
 
-Several adjustments and commands works differenly depending on the
-active color
-mode. [RGB](https://en.wikipedia.org/wiki/RGB_color_model) and
-[Indexed](https://en.wikipedia.org/wiki/Indexed_color) are the most
-common modes uses on Internet images.
+いくつかの調整やコマンドは使用されているカラーモードによって動作が変わります。[RGB カラー](https://ja.wikipedia.org/wiki/RGB)と[インデックスカラー](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%87%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC)は、インターネット上の画像でもっとも一般的に使用されているカラーモードです。
 
-You should learn more about them in the **[Color Mode](color-mode.md)**
-section.
+**[カラーモード](color-mode.md)** の項目でより深く学ぶことをおすすめします。
 
-## Color Profile
+## カラープロファイル
 
-The color profile indicates in which [color space](https://en.wikipedia.org/wiki/Color_space)
-are meant to live RGB values of the image. It is used to match RGB values
-in one device (e.g. your monitor, where you create your image) with other
-device (e.g. the user that will watch your image in her/his monitor).
-Images on Internet generally use the [sRGB color space](https://en.wikipedia.org/wiki/SRGB).
+カラープロファイルは、RGB の値がどの[色空間](https://ja.wikipedia.org/wiki/%E8%89%B2%E7%A9%BA%E9%96%93)のものであるかを定義します。あるデバイス（たとえば、あなたが画像を編集するモニター）での特定の RGB の値の見え方をほかのデバイス（たとえば、あなたの作品を見る人のモニタ）での見え方とマッチさせるために利用されています。
 
-Learn more about this in the **[Color Profile](color-profile.md)** section.
+インターネット上の画像は通常は [sRGB 色空間](https://en.wikipedia.org/wiki/SRGB)を使用しています。
+
+詳しくは、**[カラープロファイル](color-profile.md)** の項目を見てください。
 
 ---
 
 **SEE ALSO**
 
-[Color Mode](color-mode.md) |
-[Color Profile](color-profile.md) |
-[Color Bar](color-bar.md)
+[カラーモード](color-mode.md) |
+[カラープロファイル](color-profile.md) |
+[カラーバー](color-bar.md)

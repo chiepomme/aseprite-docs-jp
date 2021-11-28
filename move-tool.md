@@ -1,32 +1,29 @@
-# Move Tool
+# 移動ツール
 
-You can select the Move tool ![Move tool icon](tools/move-tool.png)
-with <kbd>V</kbd> key or using <kbd>Ctrl</kbd> key (or <kbd>⌘</kbd> on macOS).
+移動ツール![Move tool icon](tools/move-tool.png) は、<kbd>V</kbd>キーまたは、<kbd>Ctrl</kbd>キー（macOS だと <kbd>⌘</kbd>）で使用できます。
 
-This tool is useful to move the *xy*-position of a [cel](cel.md).
+このツールは[セル](cel.md)の *xy* 座標を移動するのに便利です。
 
-Notes:
+メモ：
 
-* You cannot move the Background layer.
-* Use <kbd>Shift</kbd> (<kbd>⇧</kbd>) key to lock x- or y-axis.
+* 背景レイヤーは移動できません。
+* <kbd>Shift</kbd>（<kbd>⇧</kbd>）キーを使用すると、x または y 方向だけに移動します。
 
-## Select and Move Layers
+## レイヤーの選択と移動
 
-When you use <kbd>Ctrl</kbd> (or <kbd>⌘</kbd>) key and <kbd>Left click</kbd>, the Move tool is
-selected with the *Auto Select Layer* option checked:
+<kbd>Ctrl</kbd>（または<kbd>⌘</kbd>）キーを押しながら<kbd>左ドラッグ</kbd>すると、*Auto Select Layer*（移動するレイヤーを自動選択）が有効になります。
 
 ![Autoselect option](move-tool/autoselect.png)
 
-This option allows you to select and move layers in a quickly way:
+このオプションを使うと、レイヤーの選択と移動をより早く行えます。
 
 ![Autoselect preview](move-tool/autoselect.gif)
 
-## Move Multiple Cels
+## 複数セルの移動
 
-You can move several cels at the same time using the timeline and the
-sprite editor together:
+タイムラインとスプライトエディタを一緒に使うことで、複数のセルを同時に移動することができます。
 
-1. Select multiple cels in the timeline, and then
-2. Move the cel in the sprite editor.
+1. タイムラインで複数のセルを選択します。
+2. スプライトエディタでセルを移動します。
 
 ![Move multiple cels](move-tool/move-multiple-cels.gif)
